@@ -102,17 +102,25 @@ grant all on table public.artists to service_role;
 
 grant select on table public.artists to authenticated;
 
+grant select on table public.artists to anon;
+
 grant all on table public.songs to service_role;
 
 grant select on table public.songs to authenticated;
+
+grant select on table public.songs to anon;
 
 grant all on table public.videos to service_role;
 
 grant select on table public.videos to authenticated;
 
+grant select on table public.videos to anon;
+
 grant all on table public.performances to service_role;
 
 grant select on table public.performances to authenticated;
+
+grant select on table public.performances to anon;
 
 grant all on table public.favorites to service_role;
 
