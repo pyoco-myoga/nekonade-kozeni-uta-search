@@ -13,3 +13,7 @@ variable "billing_account" {
 variable "project_services" {
   type = set(string)
 }
+
+variable "youtube_api_key_name" {
+  type = string
+}

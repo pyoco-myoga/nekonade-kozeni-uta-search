@@ -1,0 +1,1125 @@
+{
+    "artists": [
+        {
+            "id": "1f4fb6d5-0fc7-49a8-ba52-c94b639c73a1",
+            "name": "銀杏BOYZ",
+            "description": ""
+        },
+        {
+            "id": "577f591f-52fd-41cc-a7af-9966eab8ac94",
+            "name": "クリープハイプ",
+            "description": ""
+        },
+        {
+            "id": "a39fc6cd-b5a1-442c-a78d-7efde7186928",
+            "name": "ガガガSP",
+            "description": ""
+        },
+        {
+            "id": "332a01e6-cecd-485b-9e12-f55296364596",
+            "name": "THE BLUE HEARTS",
+            "description": ""
+        },
+        {
+            "id": "57c5458e-562f-4fc7-b7e3-7114d1c6d48a",
+            "name": "JUDY AND MARY",
+            "description": ""
+        },
+        {
+            "id": "c78286c8-6525-4cf2-a235-fcdf8fae7d43",
+            "name": "忘れらんねえよ",
+            "description": ""
+        },
+        {
+            "id": "825f24a8-8a46-4905-a19c-980c094791c0",
+            "name": "マカロニえんぴつ",
+            "description": ""
+        },
+        {
+            "id": "48c6461e-be65-49a8-b843-aa7140360fe8",
+            "name": "andymori",
+            "description": ""
+        },
+        {
+            "id": "5ba857c5-c31c-4b69-8571-e2339bda27d3",
+            "name": "ゆらゆら帝国",
+            "description": ""
+        },
+        {
+            "id": "9671eb45-0383-4364-b4c5-d43fd0616718",
+            "name": "SHISHAMO",
+            "description": ""
+        },
+        {
+            "id": "183f3b4c-d607-4738-9697-52ff5b14ebd8",
+            "name": "teto",
+            "description": ""
+        },
+        {
+            "id": "295e2213-9396-4853-ab5c-70476584a8b5",
+            "name": "Helsinki Lambda Club",
+            "description": ""
+        },
+        {
+            "id": "76917872-d414-47be-8676-212b36a34a0b",
+            "name": "くるり",
+            "description": ""
+        },
+        {
+            "id": "f152b1ac-6108-4e5f-af98-6592ec1d5cd3",
+            "name": "the peggies",
+            "description": ""
+        },
+        {
+            "id": "e0be6013-4b07-4bd8-a520-cfbd17caa189",
+            "name": "神聖かまってちゃん",
+            "description": ""
+        },
+        {
+            "id": "05ea2c73-a495-447d-ab35-a3ae7e1a9d7f",
+            "name": "ザ・クロマニヨンズ",
+            "description": ""
+        },
+        {
+            "id": "fe702b7e-cefd-4233-ad38-e365c0a9eb69",
+            "name": "GOING STEADY",
+            "description": ""
+        },
+        {
+            "id": "d5a0f642-25ba-47eb-ba73-33aa4a762e53",
+            "name": "Hi-STANDARD",
+            "description": ""
+        },
+        {
+            "id": "0fe46945-bb57-4b85-889b-ab46d5dc0879",
+            "name": "サバシスター",
+            "description": ""
+        },
+        {
+            "id": "f3ec7794-ef69-4300-bf9a-d13b7bbaea4e",
+            "name": "↑THE HIGH-LOWS↓",
+            "description": ""
+        },
+        {
+            "id": "10760b21-04dd-43d7-8d4c-ea424a0af0c5",
+            "name": "きのこ帝国",
+            "description": ""
+        },
+        {
+            "id": "bcbccde7-c223-4bb1-a13b-63b502dea1b3",
+            "name": "THE BOYS&GIRLS",
+            "description": ""
+        },
+        {
+            "id": "742fd26c-7b83-48ff-85ad-6aecb72897ae",
+            "name": "相対性理論",
+            "description": ""
+        },
+        {
+            "id": "f273963a-0621-4622-8ef1-af72027c7c27",
+            "name": "大森靖子",
+            "description": ""
+        },
+        {
+            "id": "8f5e27d9-e640-4b2a-9b6b-6fe071c05d3f",
+            "name": "モーモールルギャバン",
+            "description": ""
+        },
+        {
+            "id": "e53bf47b-91db-43b9-bf97-b820bc5299c4",
+            "name": "indigo la End",
+            "description": ""
+        },
+        {
+            "id": "8e0b26e0-b427-4573-a72a-fd8a2365977e",
+            "name": "GO!GO!7188",
+            "description": ""
+        },
+        {
+            "id": "6f610614-3084-4bfc-861c-5ff314d3d20c",
+            "name": "橋本絵莉子",
+            "description": ""
+        },
+        {
+            "id": "2f89fed5-05ec-4619-8550-a6e8ae14d446",
+            "name": "スピッツ",
+            "description": ""
+        }
+    ],
+    "songs": [
+        {
+            "id": "d5e1dd89-0114-41a2-855a-d15fe27c5f49",
+            "artist_id": "332a01e6-cecd-485b-9e12-f55296364596",
+            "name": "情熱の薔薇",
+            "description": ""
+        },
+        {
+            "id": "a44c7352-0455-49eb-a8f3-e4727a96fe71",
+            "artist_id": "57c5458e-562f-4fc7-b7e3-7114d1c6d48a",
+            "name": "motto",
+            "description": ""
+        },
+        {
+            "id": "a77a6eb0-c79f-48e6-9117-65cd79cf67c9",
+            "artist_id": "1f4fb6d5-0fc7-49a8-ba52-c94b639c73a1",
+            "name": "BABY BABY",
+            "description": ""
+        },
+        {
+            "id": "56620c6c-19f3-4685-ae2b-9ce58724c75f",
+            "artist_id": "c78286c8-6525-4cf2-a235-fcdf8fae7d43",
+            "name": "この高鳴りをなんと呼ぶ",
+            "description": ""
+        },
+        {
+            "id": "a7941944-4c76-49f4-ba72-e02c0a3469af",
+            "artist_id": "825f24a8-8a46-4905-a19c-980c094791c0",
+            "name": "ヤングアダルト",
+            "description": ""
+        },
+        {
+            "id": "f8d00202-ce51-4c7e-8ef8-aef5aa3811d6",
+            "artist_id": "48c6461e-be65-49a8-b843-aa7140360fe8",
+            "name": "ベンガルトラとウィスキー",
+            "description": ""
+        },
+        {
+            "id": "3d73339c-5e75-4c70-8c07-23b94d77572b",
+            "artist_id": "5ba857c5-c31c-4b69-8571-e2339bda27d3",
+            "name": "空洞です",
+            "description": ""
+        },
+        {
+            "id": "9f90eda9-4501-4fa9-ae17-2fef6782856b",
+            "artist_id": "9671eb45-0383-4364-b4c5-d43fd0616718",
+            "name": "君と夏フェス",
+            "description": ""
+        },
+        {
+            "id": "ae00da66-c3f3-4c59-8298-e9c8776bafca",
+            "artist_id": "183f3b4c-d607-4738-9697-52ff5b14ebd8",
+            "name": "高層ビルと人工衛星",
+            "description": ""
+        },
+        {
+            "id": "36b80d0b-f47d-4433-9ed9-ac07f2e7a646",
+            "artist_id": "577f591f-52fd-41cc-a7af-9966eab8ac94",
+            "name": "おやすみ泣き声、さよなら歌姫",
+            "description": ""
+        },
+        {
+            "id": "4ad06408-cd32-4777-8fc9-352e013aa9b8",
+            "artist_id": "a39fc6cd-b5a1-442c-a78d-7efde7186928",
+            "name": "国道二号線",
+            "description": ""
+        },
+        {
+            "id": "25d6a38c-d690-4939-afe7-7cc7ddb3d36c",
+            "artist_id": "295e2213-9396-4853-ab5c-70476584a8b5",
+            "name": "ユアンと踊れ",
+            "description": ""
+        },
+        {
+            "id": "98afdd63-5c3e-44e7-a40a-230735764ef4",
+            "artist_id": "76917872-d414-47be-8676-212b36a34a0b",
+            "name": "ロックンロール",
+            "description": ""
+        },
+        {
+            "id": "290faced-7ea4-4a7d-a601-a392ac00da05",
+            "artist_id": "f152b1ac-6108-4e5f-af98-6592ec1d5cd3",
+            "name": "君のせい",
+            "description": ""
+        },
+        {
+            "id": "0a643641-a3c3-4eda-9785-cf6c9bbab3eb",
+            "artist_id": "e0be6013-4b07-4bd8-a520-cfbd17caa189",
+            "name": "ロックンロールは鳴り止まないっ",
+            "description": ""
+        },
+        {
+            "id": "c1c91dd4-372e-4f11-a29c-41d24f363496",
+            "artist_id": "05ea2c73-a495-447d-ab35-a3ae7e1a9d7f",
+            "name": "タリホー",
+            "description": ""
+        },
+        {
+            "id": "9cf3d9cd-0481-4185-aafa-128407fb729a",
+            "artist_id": "fe702b7e-cefd-4233-ad38-e365c0a9eb69",
+            "name": "佳代",
+            "description": ""
+        },
+        {
+            "id": "333c9c1d-d1f6-4dce-90ba-3d4060ba118f",
+            "artist_id": "d5a0f642-25ba-47eb-ba73-33aa4a762e53",
+            "name": "dear my friend",
+            "description": ""
+        },
+        {
+            "id": "6ba53c29-926b-487a-8e52-9bed4f311268",
+            "artist_id": "0fe46945-bb57-4b85-889b-ab46d5dc0879",
+            "name": "タイムセール逃してくれ",
+            "description": ""
+        },
+        {
+            "id": "d4dc350e-b60a-4357-9211-e9047c5c3a61",
+            "artist_id": "f3ec7794-ef69-4300-bf9a-d13b7bbaea4e",
+            "name": "日曜日よりの使者",
+            "description": ""
+        },
+        {
+            "id": "79f87c5a-1e33-4364-bf56-a0298d7bf22c",
+            "artist_id": "10760b21-04dd-43d7-8d4c-ea424a0af0c5",
+            "name": "春と修羅",
+            "description": ""
+        },
+        {
+            "id": "ebd13e27-8060-4dc0-8d59-d93f790cc537",
+            "artist_id": "332a01e6-cecd-485b-9e12-f55296364596",
+            "name": "人にやさしく",
+            "description": ""
+        },
+        {
+            "id": "620a64e4-5754-4f96-a16a-52926945f32c",
+            "artist_id": "1f4fb6d5-0fc7-49a8-ba52-c94b639c73a1",
+            "name": "漂流教室",
+            "description": ""
+        },
+        {
+            "id": "e39044fd-350e-44c3-bf0f-d67fd2de1e2b",
+            "artist_id": "c78286c8-6525-4cf2-a235-fcdf8fae7d43",
+            "name": "CからはじまるABC",
+            "description": ""
+        },
+        {
+            "id": "177ff6eb-65db-4ca9-adba-a27a91575748",
+            "artist_id": "57c5458e-562f-4fc7-b7e3-7114d1c6d48a",
+            "name": "BLUE TEARS",
+            "description": ""
+        },
+        {
+            "id": "6fc9d7ec-3908-468d-8808-4fc23d66b2b4",
+            "artist_id": "bcbccde7-c223-4bb1-a13b-63b502dea1b3",
+            "name": "すべてはここから",
+            "description": ""
+        },
+        {
+            "id": "dc2e1658-79a6-4c90-9181-fdf34ad76158",
+            "artist_id": "742fd26c-7b83-48ff-85ad-6aecb72897ae",
+            "name": "気になるあの娘",
+            "description": ""
+        },
+        {
+            "id": "2dfdc23e-dcfd-442e-844d-ba5f4f645a6a",
+            "artist_id": "f273963a-0621-4622-8ef1-af72027c7c27",
+            "name": "VOID",
+            "description": ""
+        },
+        {
+            "id": "27a1304c-c0c0-449b-a854-13fe542009b4",
+            "artist_id": "1f4fb6d5-0fc7-49a8-ba52-c94b639c73a1",
+            "name": "トラッシュ",
+            "description": ""
+        },
+        {
+            "id": "33bd5faa-5ef6-43e2-9078-e815b5c6a703",
+            "artist_id": "57c5458e-562f-4fc7-b7e3-7114d1c6d48a",
+            "name": "The Great Escape",
+            "description": ""
+        },
+        {
+            "id": "e74914c1-6ae4-4085-a076-637d1553ce7f",
+            "artist_id": "8f5e27d9-e640-4b2a-9b6b-6fe071c05d3f",
+            "name": "ユキちゃん",
+            "description": ""
+        },
+        {
+            "id": "6722a88f-d06f-4130-93f8-32f5677dfaa3",
+            "artist_id": "f3ec7794-ef69-4300-bf9a-d13b7bbaea4e",
+            "name": "不死身のエレキマン",
+            "description": ""
+        },
+        {
+            "id": "5721aa37-14b3-40b0-a35a-ca6d4eebadf0",
+            "artist_id": "e53bf47b-91db-43b9-bf97-b820bc5299c4",
+            "name": "名もなきハッピーエンド",
+            "description": ""
+        },
+        {
+            "id": "70fc89ca-009b-4d4b-9cc4-6170921c8e55",
+            "artist_id": "8e0b26e0-b427-4573-a72a-fd8a2365977e",
+            "name": "とかげ3号",
+            "description": ""
+        },
+        {
+            "id": "29733798-a892-4c18-9ce3-4e39e2c8c47a",
+            "artist_id": "577f591f-52fd-41cc-a7af-9966eab8ac94",
+            "name": "愛の標識",
+            "description": ""
+        },
+        {
+            "id": "f773718f-37dd-4ecb-bc88-e50bc746a628",
+            "artist_id": "577f591f-52fd-41cc-a7af-9966eab8ac94",
+            "name": "栞",
+            "description": ""
+        },
+        {
+            "id": "6c03e901-ca2a-44e1-b2b5-b42f828543a9",
+            "artist_id": "6f610614-3084-4bfc-861c-5ff314d3d20c",
+            "name": "今日がインフィニティ",
+            "description": ""
+        },
+        {
+            "id": "51d02786-cf73-4983-99e6-d3632457bc71",
+            "artist_id": "2f89fed5-05ec-4619-8550-a6e8ae14d446",
+            "name": "チェリー",
+            "description": ""
+        },
+        {
+            "id": "c1f93de2-f8c1-40c0-ab43-2d8927093fe2",
+            "artist_id": "57c5458e-562f-4fc7-b7e3-7114d1c6d48a",
+            "name": "Over Drive",
+            "description": ""
+        },
+        {
+            "id": "4efa929a-88d2-4950-b530-4ba4689fec46",
+            "artist_id": "f3ec7794-ef69-4300-bf9a-d13b7bbaea4e",
+            "name": "即死",
+            "description": ""
+        },
+        {
+            "id": "00afdee3-08d2-446a-8079-60afccd1829e",
+            "artist_id": "c78286c8-6525-4cf2-a235-fcdf8fae7d43",
+            "name": "俺よ届け",
+            "description": ""
+        },
+        {
+            "id": "488f63e2-0ce7-4f8a-973c-1e147bef205f",
+            "artist_id": "577f591f-52fd-41cc-a7af-9966eab8ac94",
+            "name": "かえるの唄",
+            "description": ""
+        },
+        {
+            "id": "cdee0256-ef8d-462e-ab9b-c6dd53d67e15",
+            "artist_id": "1f4fb6d5-0fc7-49a8-ba52-c94b639c73a1",
+            "name": "あの娘は綾波レイが好き",
+            "description": ""
+        },
+        {
+            "id": "bec4d76b-a9a0-4646-83ff-6dca42a7fbf5",
+            "artist_id": "fe702b7e-cefd-4233-ad38-e365c0a9eb69",
+            "name": "童貞ソー・ヤング",
+            "description": ""
+        },
+        {
+            "id": "a453fd1e-5d31-4867-9c2d-376feeee0fe8",
+            "artist_id": "f273963a-0621-4622-8ef1-af72027c7c27",
+            "name": "きゅるきゅる",
+            "description": ""
+        },
+        {
+            "id": "9099c578-5878-47b5-acb4-b04ff3dce8b3",
+            "artist_id": "1f4fb6d5-0fc7-49a8-ba52-c94b639c73a1",
+            "name": "あの娘に1ミリでもちょっかいかけたら殺す",
+            "description": ""
+        },
+        {
+            "id": "c1f87da7-34fd-4083-99b8-b5a0faa8d99b",
+            "artist_id": "9671eb45-0383-4364-b4c5-d43fd0616718",
+            "name": "バンドマン",
+            "description": ""
+        },
+        {
+            "id": "13959312-c4d4-4f48-8f82-a904959ae5dd",
+            "artist_id": "c78286c8-6525-4cf2-a235-fcdf8fae7d43",
+            "name": "アイラブ言う",
+            "description": ""
+        },
+        {
+            "id": "c3bc97bd-640c-45b9-b9ab-2cec529159f5",
+            "artist_id": "f273963a-0621-4622-8ef1-af72027c7c27",
+            "name": "I&YOU&I&YOU&I",
+            "description": ""
+        },
+        {
+            "id": "57579bab-7ac6-4dda-887a-9f95d4845d09",
+            "artist_id": "1f4fb6d5-0fc7-49a8-ba52-c94b639c73a1",
+            "name": "SKOOL KILL",
+            "description": ""
+        }
+    ],
+    "videos": [
+        {
+            "id": "fa97f4da-bac3-4246-9300-b680cb91c557",
+            "video_id": "G7kEmjwBVRc",
+            "title": "【収益化記念】ほんまにありがとう！圧倒的、感謝っ…！雑談したり、初めての歌枠もあるよ！ポロリもあるよ！？【猫撫こぜに｜ぶいぱい｜アップランド｜新人VTuber】",
+            "published_at": "2025-02-14T12:12:21Z"
+        },
+        {
+            "id": "b1889fe7-717f-436a-8f07-00ab35b150b0",
+            "video_id": "ePJ2ZpIvLc8",
+            "title": "【歌枠】初めての歌枠配信～！邦ロックとパンクいっぱい歌うぞい【猫撫こぜに｜ぶいぱい｜アップランド｜新人VTuber】 #ストリーマーカラオケ #JOYSOUND",
+            "published_at": "2025-02-23T13:02:40Z"
+        },
+        {
+            "id": "ce74d796-a8d8-48d7-8cfd-8248421813a1",
+            "video_id": "haJCtHjQ6rc",
+            "title": "【歌枠】KARAOKE歌枠配信～！わしは邦ロックとパンクしか歌わんぞ！（頑固おやじ）【猫撫こぜに｜ぶいぱい｜アップランド｜新人VTuber】 #ストリーマーカラオケ #JOYSOUND",
+            "published_at": "2025-02-27T04:45:22Z"
+        },
+        {
+            "id": "c506d088-63ca-4c84-886d-ba2f9ad1d695",
+            "video_id": "IXsUXTK1WjE",
+            "title": "【デビュー1ヵ月記念】ギター弾き語り初お披露目っ…！この30日のことについて話したりもしよ！【猫撫こぜに｜ぶいぱい｜アップランド｜新人VTuber｜雑談｜歌枠】",
+            "published_at": "2025-03-02T12:53:12Z"
+        },
+        {
+            "id": "5d29d7c7-7873-4dd5-bc45-6d08787266dc",
+            "video_id": "uoHKkr8xPcI",
+            "title": "【歌枠】初めてのギター弾き語り配信！パンクや邦ロックを歌って午後も一緒にがんばろうね！初見大歓迎♡【猫撫こぜに｜ぶいぱい｜アップランド｜新人VTuber｜Singing Stream｜ランチタイム】",
+            "published_at": "2025-03-12T04:23:44Z"
+        },
+        {
+            "id": "1432f927-fcd2-4a16-93f8-6089461bc0dc",
+            "video_id": "JxB8p2z2Scg",
+            "title": "【歌枠】カラオケ&急遽ギター弾き語り配信！邦ロックとかパンクとか、懐メロのバンド歌う【猫撫こぜに｜ぶいぱい｜アップランド｜新人VTuber｜KARAOKE】 #ストリーマーカラオケ #JOYSOUND",
+            "published_at": "2025-03-22T12:35:35Z"
+        },
+        {
+            "id": "500cef36-d9ab-49f3-9007-6c2dea5e03cb",
+            "video_id": "zOlz9YEfAws",
+            "title": "【デビュー2ヵ月記念】お祝いに春の曲、桜の歌を弾き語りしたりカラオケしたり、お喋りしたり！【猫撫こぜに｜ぶいぱい｜アップランド｜新人VTuber｜雑談｜歌枠】#ストリーマーカラオケ #JOYSOUND",
+            "published_at": "2025-03-31T11:33:11Z"
+        },
+        {
+            "id": "d14ad9e2-3be4-496d-84da-d577ad3a74b7",
+            "video_id": "3VBd6dWILeU",
+            "title": "【耐久】チャンネル登録者さん2,000人目指して！雀魂の金の間で段位戦やったり歌ったりします！応援してけろ！【猫撫こぜに｜ぶいぱい｜アップランド｜新人VTuber｜麻雀｜歌枠】",
+            "published_at": "2025-04-07T06:17:45Z"
+        },
+        {
+            "id": "4762ac9c-d9eb-492f-9921-bedd6e74b6af",
+            "video_id": "c0PpP4d7-A4",
+            "title": "【#きみとアイドル歌枠リレー】初めてのリレーで緊張じゃ～！パンクと邦ロックをカラオケ＋ギター弾き語りでお届けしゃっす！【猫撫こぜに｜ぶいぱい｜アップランド｜新人VTuber】",
+            "published_at": "2025-04-26T10:07:17Z"
+        },
+        {
+            "id": "fb0e7829-d5b5-47a3-8f9a-94bf3c937b10",
+            "video_id": "KH9zvtfSri4",
+            "title": "【デビュー3ヵ月記念】お知らせがあります！今月の振り返り雑談と、歌も歌うかも～！【猫撫こぜに｜ぶいぱい｜アップランド｜新人VTuber｜雑談｜歌枠】#ストリーマーカラオケ #JOYSOUND",
+            "published_at": "2025-04-30T13:16:06Z"
+        }
+    ],
+    "performances": [
+        {
+            "id": "3d9c0ee4-5633-430f-b458-9b86fbb597cf",
+            "song_id": "d5e1dd89-0114-41a2-855a-d15fe27c5f49",
+            "video_id": "fa97f4da-bac3-4246-9300-b680cb91c557",
+            "accompaniment": "KARAOKE",
+            "length": "FULL",
+            "recommended": true,
+            "start_sec": 1917,
+            "end_sec": 2087
+        },
+        {
+            "id": "520adc05-5062-410a-92ba-98a86cb00f28",
+            "song_id": "a44c7352-0455-49eb-a8f3-e4727a96fe71",
+            "video_id": "fa97f4da-bac3-4246-9300-b680cb91c557",
+            "accompaniment": "KARAOKE",
+            "length": "FULL",
+            "recommended": true,
+            "start_sec": 2333,
+            "end_sec": 2510
+        },
+        {
+            "id": "74e0c6c8-d589-4ee7-85b9-93f19a53a3f8",
+            "song_id": "a77a6eb0-c79f-48e6-9117-65cd79cf67c9",
+            "video_id": "fa97f4da-bac3-4246-9300-b680cb91c557",
+            "accompaniment": "KARAOKE",
+            "length": "FULL",
+            "recommended": true,
+            "start_sec": 2750,
+            "end_sec": 2984
+        },
+        {
+            "id": "0f63ccd2-9c22-4afc-b097-82a748136c18",
+            "song_id": "56620c6c-19f3-4685-ae2b-9ce58724c75f",
+            "video_id": "b1889fe7-717f-436a-8f07-00ab35b150b0",
+            "accompaniment": "KARAOKE",
+            "length": "FULL",
+            "recommended": true,
+            "start_sec": 412,
+            "end_sec": 684
+        },
+        {
+            "id": "978e9e47-4453-4b1b-80c0-80e74f45a434",
+            "song_id": "a7941944-4c76-49f4-ba72-e02c0a3469af",
+            "video_id": "b1889fe7-717f-436a-8f07-00ab35b150b0",
+            "accompaniment": "KARAOKE",
+            "length": "FULL",
+            "recommended": true,
+            "start_sec": 1047,
+            "end_sec": 1302
+        },
+        {
+            "id": "690c62b6-4fcf-4b4d-9137-4434644d9e1c",
+            "song_id": "f8d00202-ce51-4c7e-8ef8-aef5aa3811d6",
+            "video_id": "b1889fe7-717f-436a-8f07-00ab35b150b0",
+            "accompaniment": "KARAOKE",
+            "length": "FULL",
+            "recommended": true,
+            "start_sec": 1564,
+            "end_sec": 1722
+        },
+        {
+            "id": "f8f33a15-3c93-402a-856c-6f0172ca4c21",
+            "song_id": "3d73339c-5e75-4c70-8c07-23b94d77572b",
+            "video_id": "b1889fe7-717f-436a-8f07-00ab35b150b0",
+            "accompaniment": "KARAOKE",
+            "length": "FULL",
+            "recommended": true,
+            "start_sec": 1943,
+            "end_sec": 2236
+        },
+        {
+            "id": "e7918d96-7db8-481f-a018-dea4a60bfda6",
+            "song_id": "9f90eda9-4501-4fa9-ae17-2fef6782856b",
+            "video_id": "b1889fe7-717f-436a-8f07-00ab35b150b0",
+            "accompaniment": "KARAOKE",
+            "length": "FULL",
+            "recommended": true,
+            "start_sec": 2572,
+            "end_sec": 2795
+        },
+        {
+            "id": "6d36bd38-3ad0-4ff4-a027-387e7b0aedd9",
+            "song_id": "ae00da66-c3f3-4c59-8298-e9c8776bafca",
+            "video_id": "b1889fe7-717f-436a-8f07-00ab35b150b0",
+            "accompaniment": "KARAOKE",
+            "length": "FULL",
+            "recommended": true,
+            "start_sec": 3292,
+            "end_sec": 3561
+        },
+        {
+            "id": "49ae8e43-ae00-4521-a3c8-0256ddd26ece",
+            "song_id": "36b80d0b-f47d-4433-9ed9-ac07f2e7a646",
+            "video_id": "b1889fe7-717f-436a-8f07-00ab35b150b0",
+            "accompaniment": "KARAOKE",
+            "length": "FULL",
+            "recommended": true,
+            "start_sec": 4125,
+            "end_sec": 4364
+        },
+        {
+            "id": "070d8d26-9a1f-4898-8fae-4870bb4c749d",
+            "song_id": "4ad06408-cd32-4777-8fc9-352e013aa9b8",
+            "video_id": "ce74d796-a8d8-48d7-8cfd-8248421813a1",
+            "accompaniment": "KARAOKE",
+            "length": "FULL",
+            "recommended": true,
+            "start_sec": 473,
+            "end_sec": 712
+        },
+        {
+            "id": "945116cf-eccf-4f3a-a4b9-bdfc6fbf158f",
+            "song_id": "25d6a38c-d690-4939-afe7-7cc7ddb3d36c",
+            "video_id": "ce74d796-a8d8-48d7-8cfd-8248421813a1",
+            "accompaniment": "KARAOKE",
+            "length": "FULL",
+            "recommended": true,
+            "start_sec": 964,
+            "end_sec": 1127
+        },
+        {
+            "id": "5a959318-3585-4ad2-8e12-38699bf32fd3",
+            "song_id": "98afdd63-5c3e-44e7-a40a-230735764ef4",
+            "video_id": "ce74d796-a8d8-48d7-8cfd-8248421813a1",
+            "accompaniment": "KARAOKE",
+            "length": "FULL",
+            "recommended": true,
+            "start_sec": 1321,
+            "end_sec": 1566
+        },
+        {
+            "id": "b7957168-ee00-4475-906f-e61129852192",
+            "song_id": "0a643641-a3c3-4eda-9785-cf6c9bbab3eb",
+            "video_id": "ce74d796-a8d8-48d7-8cfd-8248421813a1",
+            "accompaniment": "KARAOKE",
+            "length": "FULL",
+            "recommended": true,
+            "start_sec": 2522,
+            "end_sec": 2748
+        },
+        {
+            "id": "aa4e66ca-ba57-41c9-9c53-789567a2d530",
+            "song_id": "c1c91dd4-372e-4f11-a29c-41d24f363496",
+            "video_id": "ce74d796-a8d8-48d7-8cfd-8248421813a1",
+            "accompaniment": "KARAOKE",
+            "length": "FULL",
+            "recommended": true,
+            "start_sec": 3164,
+            "end_sec": 3363
+        },
+        {
+            "id": "6063ba47-d1d4-46dc-a121-e8ed283cdcc9",
+            "song_id": "9cf3d9cd-0481-4185-aafa-128407fb729a",
+            "video_id": "ce74d796-a8d8-48d7-8cfd-8248421813a1",
+            "accompaniment": "KARAOKE",
+            "length": "FULL",
+            "recommended": true,
+            "start_sec": 3567,
+            "end_sec": 3923
+        },
+        {
+            "id": "00c3fe3b-ea74-45ae-81c8-26e8adcfc8af",
+            "song_id": "333c9c1d-d1f6-4dce-90ba-3d4060ba118f",
+            "video_id": "c506d088-63ca-4c84-886d-ba2f9ad1d695",
+            "accompaniment": "ELECTRIC",
+            "length": "FULL",
+            "recommended": true,
+            "start_sec": 2203,
+            "end_sec": 2397
+        },
+        {
+            "id": "f2ab1e41-1947-4511-83e4-0d2a03a6914c",
+            "song_id": "6ba53c29-926b-487a-8e52-9bed4f311268",
+            "video_id": "c506d088-63ca-4c84-886d-ba2f9ad1d695",
+            "accompaniment": "ELECTRIC",
+            "length": "FULL",
+            "recommended": true,
+            "start_sec": 2814,
+            "end_sec": 3037
+        },
+        {
+            "id": "6a012005-9595-413f-bc7f-e9fd64a3f686",
+            "song_id": "d4dc350e-b60a-4357-9211-e9047c5c3a61",
+            "video_id": "c506d088-63ca-4c84-886d-ba2f9ad1d695",
+            "accompaniment": "ELECTRIC",
+            "length": "FULL",
+            "recommended": true,
+            "start_sec": 3405,
+            "end_sec": 3775
+        },
+        {
+            "id": "19d2d199-0ad1-4718-a146-8ae5e9f16824",
+            "song_id": "79f87c5a-1e33-4364-bf56-a0298d7bf22c",
+            "video_id": "c506d088-63ca-4c84-886d-ba2f9ad1d695",
+            "accompaniment": "ELECTRIC",
+            "length": "FULL",
+            "recommended": true,
+            "start_sec": 4512,
+            "end_sec": 4665
+        },
+        {
+            "id": "47bb1712-7e3a-40b1-a03e-a1571e4f3cf7",
+            "song_id": "ebd13e27-8060-4dc0-8d59-d93f790cc537",
+            "video_id": "5d29d7c7-7873-4dd5-bc45-6d08787266dc",
+            "accompaniment": "ELECTRIC",
+            "length": "FULL",
+            "recommended": true,
+            "start_sec": 490,
+            "end_sec": 657
+        },
+        {
+            "id": "7f5468eb-a1aa-4bb7-a7ad-734023d69f43",
+            "song_id": "620a64e4-5754-4f96-a16a-52926945f32c",
+            "video_id": "5d29d7c7-7873-4dd5-bc45-6d08787266dc",
+            "accompaniment": "ELECTRIC",
+            "length": "FULL",
+            "recommended": true,
+            "start_sec": 868,
+            "end_sec": 1283
+        },
+        {
+            "id": "4bc6721e-bddf-4b22-9e65-224c2dfc5853",
+            "song_id": "e39044fd-350e-44c3-bf0f-d67fd2de1e2b",
+            "video_id": "5d29d7c7-7873-4dd5-bc45-6d08787266dc",
+            "accompaniment": "ELECTRIC",
+            "length": "FULL",
+            "recommended": true,
+            "start_sec": 1499,
+            "end_sec": 1645
+        },
+        {
+            "id": "c258ea42-b531-4295-80f7-73b8d9a9f675",
+            "song_id": "177ff6eb-65db-4ca9-adba-a27a91575748",
+            "video_id": "5d29d7c7-7873-4dd5-bc45-6d08787266dc",
+            "accompaniment": "ELECTRIC",
+            "length": "FULL",
+            "recommended": true,
+            "start_sec": 1872,
+            "end_sec": 2070
+        },
+        {
+            "id": "8e616de7-de47-423c-b5b4-f47f1a1b1ccd",
+            "song_id": "6fc9d7ec-3908-468d-8808-4fc23d66b2b4",
+            "video_id": "5d29d7c7-7873-4dd5-bc45-6d08787266dc",
+            "accompaniment": "ELECTRIC",
+            "length": "FULL",
+            "recommended": true,
+            "start_sec": 2310,
+            "end_sec": 2571
+        },
+        {
+            "id": "7ceacff1-a80f-4a28-97a7-7b9061c1e099",
+            "song_id": "dc2e1658-79a6-4c90-9181-fdf34ad76158",
+            "video_id": "5d29d7c7-7873-4dd5-bc45-6d08787266dc",
+            "accompaniment": "ELECTRIC",
+            "length": "FULL",
+            "recommended": true,
+            "start_sec": 2804,
+            "end_sec": 2985
+        },
+        {
+            "id": "3654aaeb-735c-4070-918b-611a45da923d",
+            "song_id": "2dfdc23e-dcfd-442e-844d-ba5f4f645a6a",
+            "video_id": "5d29d7c7-7873-4dd5-bc45-6d08787266dc",
+            "accompaniment": "ELECTRIC",
+            "length": "FULL",
+            "recommended": true,
+            "start_sec": 3350,
+            "end_sec": 3687
+        },
+        {
+            "id": "00bdf3b2-b4d1-48cf-9f7f-2ed25c158e57",
+            "song_id": "27a1304c-c0c0-449b-a854-13fe542009b4",
+            "video_id": "1432f927-fcd2-4a16-93f8-6089461bc0dc",
+            "accompaniment": "KARAOKE",
+            "length": "FULL",
+            "recommended": true,
+            "start_sec": 776,
+            "end_sec": 1029
+        },
+        {
+            "id": "db703910-303f-4ed1-afab-de2bed05a351",
+            "song_id": "33bd5faa-5ef6-43e2-9078-e815b5c6a703",
+            "video_id": "1432f927-fcd2-4a16-93f8-6089461bc0dc",
+            "accompaniment": "KARAOKE",
+            "length": "FULL",
+            "recommended": true,
+            "start_sec": 1374,
+            "end_sec": 1562
+        },
+        {
+            "id": "3dbea828-91aa-4217-9583-e6879bf01e41",
+            "song_id": "e74914c1-6ae4-4085-a076-637d1553ce7f",
+            "video_id": "1432f927-fcd2-4a16-93f8-6089461bc0dc",
+            "accompaniment": "KARAOKE",
+            "length": "FULL",
+            "recommended": true,
+            "start_sec": 1916,
+            "end_sec": 2161
+        },
+        {
+            "id": "d3b44d12-ab2d-46ae-8a1f-b0081c0adbcf",
+            "song_id": "6722a88f-d06f-4130-93f8-32f5677dfaa3",
+            "video_id": "1432f927-fcd2-4a16-93f8-6089461bc0dc",
+            "accompaniment": "KARAOKE",
+            "length": "FULL",
+            "recommended": true,
+            "start_sec": 2439,
+            "end_sec": 2695
+        },
+        {
+            "id": "e760824c-0c33-49e2-994c-a3eaedd09247",
+            "song_id": "5721aa37-14b3-40b0-a35a-ca6d4eebadf0",
+            "video_id": "1432f927-fcd2-4a16-93f8-6089461bc0dc",
+            "accompaniment": "KARAOKE",
+            "length": "FULL",
+            "recommended": true,
+            "start_sec": 3054,
+            "end_sec": 3321
+        },
+        {
+            "id": "a3fc7185-075c-4207-b139-af9298c03a14",
+            "song_id": "70fc89ca-009b-4d4b-9cc4-6170921c8e55",
+            "video_id": "1432f927-fcd2-4a16-93f8-6089461bc0dc",
+            "accompaniment": "KARAOKE",
+            "length": "FULL",
+            "recommended": true,
+            "start_sec": 3540,
+            "end_sec": 3760
+        },
+        {
+            "id": "65d18500-2f10-4527-87c1-9f8d915c85e5",
+            "song_id": "29733798-a892-4c18-9ce3-4e39e2c8c47a",
+            "video_id": "1432f927-fcd2-4a16-93f8-6089461bc0dc",
+            "accompaniment": "ELECTRIC",
+            "length": "FULL",
+            "recommended": true,
+            "start_sec": 4839,
+            "end_sec": 5014
+        },
+        {
+            "id": "40fdba06-22bc-47ef-ae1b-8168dcbe6fc5",
+            "song_id": "79f87c5a-1e33-4364-bf56-a0298d7bf22c",
+            "video_id": "1432f927-fcd2-4a16-93f8-6089461bc0dc",
+            "accompaniment": "ELECTRIC",
+            "length": "FULL",
+            "recommended": true,
+            "start_sec": 5270,
+            "end_sec": 5434
+        },
+        {
+            "id": "7fdef905-b30f-461c-b8c0-fdc9a042bc8d",
+            "song_id": "6ba53c29-926b-487a-8e52-9bed4f311268",
+            "video_id": "1432f927-fcd2-4a16-93f8-6089461bc0dc",
+            "accompaniment": "ELECTRIC",
+            "length": "FULL",
+            "recommended": true,
+            "start_sec": 5543,
+            "end_sec": 5765
+        },
+        {
+            "id": "09f50078-af93-4c55-ab4f-0bc1fe92148d",
+            "song_id": "333c9c1d-d1f6-4dce-90ba-3d4060ba118f",
+            "video_id": "1432f927-fcd2-4a16-93f8-6089461bc0dc",
+            "accompaniment": "ELECTRIC",
+            "length": "FULL",
+            "recommended": true,
+            "start_sec": 5923,
+            "end_sec": 6125
+        },
+        {
+            "id": "971f4c8d-a2f6-4190-9832-a9e5132e7f3f",
+            "song_id": "9cf3d9cd-0481-4185-aafa-128407fb729a",
+            "video_id": "500cef36-d9ab-49f3-9007-6c2dea5e03cb",
+            "accompaniment": "KARAOKE",
+            "length": "FULL",
+            "recommended": true,
+            "start_sec": 3787,
+            "end_sec": 4142
+        },
+        {
+            "id": "4f6ce07e-be82-4405-ade8-c8bc614ef8d1",
+            "song_id": "f773718f-37dd-4ecb-bc88-e50bc746a628",
+            "video_id": "500cef36-d9ab-49f3-9007-6c2dea5e03cb",
+            "accompaniment": "KARAOKE",
+            "length": "FULL",
+            "recommended": true,
+            "start_sec": 4644,
+            "end_sec": 4904
+        },
+        {
+            "id": "9d8f278b-0e60-4125-84cf-89da56a98584",
+            "song_id": "6c03e901-ca2a-44e1-b2b5-b42f828543a9",
+            "video_id": "500cef36-d9ab-49f3-9007-6c2dea5e03cb",
+            "accompaniment": "ELECTRIC",
+            "length": "FULL",
+            "recommended": true,
+            "start_sec": 5886,
+            "end_sec": 6098
+        },
+        {
+            "id": "b1558084-ca65-4573-be0d-21df52784778",
+            "song_id": "51d02786-cf73-4983-99e6-d3632457bc71",
+            "video_id": "500cef36-d9ab-49f3-9007-6c2dea5e03cb",
+            "accompaniment": "ELECTRIC",
+            "length": "FULL",
+            "recommended": true,
+            "start_sec": 6658,
+            "end_sec": 6902
+        },
+        {
+            "id": "8b95272d-cb41-4186-8983-69a60703686d",
+            "song_id": "27a1304c-c0c0-449b-a854-13fe542009b4",
+            "video_id": "d14ad9e2-3be4-496d-84da-d577ad3a74b7",
+            "accompaniment": "KARAOKE",
+            "length": "FULL",
+            "recommended": false,
+            "start_sec": 3582,
+            "end_sec": 3834
+        },
+        {
+            "id": "836cb02b-5651-4f13-b37f-f58fc1661ced",
+            "song_id": "f8d00202-ce51-4c7e-8ef8-aef5aa3811d6",
+            "video_id": "d14ad9e2-3be4-496d-84da-d577ad3a74b7",
+            "accompaniment": "KARAOKE",
+            "length": "FULL",
+            "recommended": false,
+            "start_sec": 6951,
+            "end_sec": 7109
+        },
+        {
+            "id": "8c051f84-5f26-4440-a0b8-cd9fba7aac68",
+            "song_id": "c1f93de2-f8c1-40c0-ab43-2d8927093fe2",
+            "video_id": "d14ad9e2-3be4-496d-84da-d577ad3a74b7",
+            "accompaniment": "KARAOKE",
+            "length": "FULL",
+            "recommended": true,
+            "start_sec": 7220,
+            "end_sec": 7475
+        },
+        {
+            "id": "7540f23a-3d80-4377-ad94-1cd30cb6c167",
+            "song_id": "4efa929a-88d2-4950-b530-4ba4689fec46",
+            "video_id": "d14ad9e2-3be4-496d-84da-d577ad3a74b7",
+            "accompaniment": "KARAOKE",
+            "length": "FULL",
+            "recommended": true,
+            "start_sec": 7639,
+            "end_sec": 7779
+        },
+        {
+            "id": "2d392765-0c62-4560-8b62-696df7c7080a",
+            "song_id": "00afdee3-08d2-446a-8079-60afccd1829e",
+            "video_id": "d14ad9e2-3be4-496d-84da-d577ad3a74b7",
+            "accompaniment": "KARAOKE",
+            "length": "FULL",
+            "recommended": false,
+            "start_sec": 7856,
+            "end_sec": 8060
+        },
+        {
+            "id": "221bd810-ec76-46f9-8c5f-26a026e5eb35",
+            "song_id": "488f63e2-0ce7-4f8a-973c-1e147bef205f",
+            "video_id": "d14ad9e2-3be4-496d-84da-d577ad3a74b7",
+            "accompaniment": "KARAOKE",
+            "length": "FULL",
+            "recommended": false,
+            "start_sec": 8228,
+            "end_sec": 8360
+        },
+        {
+            "id": "f0b89021-db48-4fb6-a60c-46ee7d0b4e64",
+            "song_id": "cdee0256-ef8d-462e-ab9b-c6dd53d67e15",
+            "video_id": "d14ad9e2-3be4-496d-84da-d577ad3a74b7",
+            "accompaniment": "KARAOKE",
+            "length": "FULL",
+            "recommended": true,
+            "start_sec": 8503,
+            "end_sec": 8849
+        },
+        {
+            "id": "e51cb8c2-25f9-4dfe-8e9e-d787fcde2b1e",
+            "song_id": "bec4d76b-a9a0-4646-83ff-6dca42a7fbf5",
+            "video_id": "d14ad9e2-3be4-496d-84da-d577ad3a74b7",
+            "accompaniment": "KARAOKE",
+            "length": "FULL",
+            "recommended": true,
+            "start_sec": 9013,
+            "end_sec": 9392
+        },
+        {
+            "id": "bc4a1899-5317-4d78-a3a7-f443bc4af6cd",
+            "song_id": "a453fd1e-5d31-4867-9c2d-376feeee0fe8",
+            "video_id": "d14ad9e2-3be4-496d-84da-d577ad3a74b7",
+            "accompaniment": "KARAOKE",
+            "length": "FULL",
+            "recommended": false,
+            "start_sec": 9600,
+            "end_sec": 9786
+        },
+        {
+            "id": "f1a1fe06-bd22-4926-88b7-83e1369831c6",
+            "song_id": "a7941944-4c76-49f4-ba72-e02c0a3469af",
+            "video_id": "d14ad9e2-3be4-496d-84da-d577ad3a74b7",
+            "accompaniment": "KARAOKE",
+            "length": "FULL",
+            "recommended": true,
+            "start_sec": 10037,
+            "end_sec": 10292
+        },
+        {
+            "id": "ca21f066-991b-49db-a43c-89e48b4be474",
+            "song_id": "290faced-7ea4-4a7d-a601-a392ac00da05",
+            "video_id": "ce74d796-a8d8-48d7-8cfd-8248421813a1",
+            "accompaniment": "KARAOKE",
+            "length": "FULL",
+            "recommended": true,
+            "start_sec": 1866,
+            "end_sec": 2132
+        },
+        {
+            "id": "94e3ffa3-9b11-4a01-a0d0-97828a497a35",
+            "song_id": "9099c578-5878-47b5-acb4-b04ff3dce8b3",
+            "video_id": "4762ac9c-d9eb-492f-9921-bedd6e74b6af",
+            "accompaniment": "KARAOKE",
+            "length": "FULL",
+            "recommended": true,
+            "start_sec": 267,
+            "end_sec": 512
+        },
+        {
+            "id": "9ac954f7-ceac-48ab-9bff-9ff05a779de3",
+            "song_id": "c1f87da7-34fd-4083-99b8-b5a0faa8d99b",
+            "video_id": "4762ac9c-d9eb-492f-9921-bedd6e74b6af",
+            "accompaniment": "KARAOKE",
+            "length": "FULL",
+            "recommended": true,
+            "start_sec": 586,
+            "end_sec": 905
+        },
+        {
+            "id": "dd5fe525-9d55-4ec2-950a-fe01d81c0352",
+            "song_id": "36b80d0b-f47d-4433-9ed9-ac07f2e7a646",
+            "video_id": "4762ac9c-d9eb-492f-9921-bedd6e74b6af",
+            "accompaniment": "KARAOKE",
+            "length": "FULL",
+            "recommended": true,
+            "start_sec": 964,
+            "end_sec": 1200
+        },
+        {
+            "id": "dfe239f7-ce53-4126-998a-0bc4e13d1e93",
+            "song_id": "13959312-c4d4-4f48-8f82-a904959ae5dd",
+            "video_id": "4762ac9c-d9eb-492f-9921-bedd6e74b6af",
+            "accompaniment": "ELECTRIC",
+            "length": "FULL",
+            "recommended": true,
+            "start_sec": 1324,
+            "end_sec": 1539
+        },
+        {
+            "id": "fe5453ae-0d1c-4784-b66a-819738c60421",
+            "song_id": "c3bc97bd-640c-45b9-b9ab-2cec529159f5",
+            "video_id": "4762ac9c-d9eb-492f-9921-bedd6e74b6af",
+            "accompaniment": "ELECTRIC",
+            "length": "FULL",
+            "recommended": true,
+            "start_sec": 1613,
+            "end_sec": 1779
+        },
+        {
+            "id": "a8e6ffc2-bda9-40bb-85cf-428ad37a6ace",
+            "song_id": "c1f93de2-f8c1-40c0-ab43-2d8927093fe2",
+            "video_id": "fb0e7829-d5b5-47a3-8f9a-94bf3c937b10",
+            "accompaniment": "KARAOKE",
+            "length": "FULL",
+            "recommended": true,
+            "start_sec": 5045,
+            "end_sec": 5302
+        },
+        {
+            "id": "5962406a-3241-4c26-8155-60f07684b1df",
+            "song_id": "57579bab-7ac6-4dda-887a-9f95d4845d09",
+            "video_id": "fb0e7829-d5b5-47a3-8f9a-94bf3c937b10",
+            "accompaniment": "KARAOKE",
+            "length": "FULL",
+            "recommended": true,
+            "start_sec": 5428,
+            "end_sec": 5758
+        },
+        {
+            "id": "8e9bf5fc-46ab-46a8-ac54-d36ef5a898c1",
+            "song_id": "ae00da66-c3f3-4c59-8298-e9c8776bafca",
+            "video_id": "fb0e7829-d5b5-47a3-8f9a-94bf3c937b10",
+            "accompaniment": "KARAOKE",
+            "length": "FULL",
+            "recommended": false,
+            "start_sec": 5890,
+            "end_sec": 6159
+        },
+        {
+            "id": "b8b4d3e1-6779-4b12-9391-57d5a32a01d5",
+            "song_id": "56620c6c-19f3-4685-ae2b-9ce58724c75f",
+            "video_id": "fb0e7829-d5b5-47a3-8f9a-94bf3c937b10",
+            "accompaniment": "KARAOKE",
+            "length": "FULL",
+            "recommended": true,
+            "start_sec": 6310,
+            "end_sec": 6580
+        }
+    ]
+}

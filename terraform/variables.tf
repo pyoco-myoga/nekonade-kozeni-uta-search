@@ -12,15 +12,11 @@ variable "project_id" {
   type = string
 }
 
-variable "hosting_site_id" {
+variable "hosting_release_site_id" {
   type = string
 }
 
-variable "data_connect_service_id" {
-  type = string
-}
-
-variable "data_connect_service_location" {
+variable "hosting_staging_site_id" {
   type = string
 }
 
@@ -40,24 +36,50 @@ variable "algolia_searchable_attributes" {
   type = list(string)
 }
 
-variable "google_identitiy_platform_tenant_name" {
-  type    = string
-  default = "identity-tenant"
+variable "algolia_attributes_to_retrieve" {
+  type = list(string)
 }
 
-variable "authentication_config" {
-  type        = map(map(string))
-  description = "key: idp_id, value: {client_id, secret}"
+variable "algolia_attributes_for_faceting" {
+  type = list(string)
 }
 
-variable "cloud_storage_name" {
+variable "algolia_custom_ranking" {
+  type = list(string)
+}
+
+variable "supabase_access_token" {
   type = string
 }
 
-variable "cloud_storage_location" {
+variable "supabase_organization_id" {
   type = string
 }
 
-variable "cloud_storage_class" {
+variable "supabase_database_password" {
+  type = string
+}
+
+variable "supabase_region" {
+  type = string
+}
+
+variable "supabase_auth_google_client_id" {
+  type = string
+}
+
+variable "supabase_auth_google_secret" {
+  type = string
+}
+
+variable "supabase_auth_twitter_client_id" {
+  type = string
+}
+
+variable "supabase_auth_twitter_secret" {
+  type = string
+}
+
+variable "youtube_api_key_name" {
   type = string
 }

@@ -1,0 +1,17 @@
+{
+  "projects": {
+    "default": "nekonade-kozeni-uta-search"
+  },
+  "targets": {
+    "nekonade-kozeni-uta-search": {
+      "hosting": {
+        "production": [
+          "nekonade-kozeni-uta-search"
+        ],
+        "staging": [
+          "nekonade-kozeni-uta-search-staging"
+        ]
+      }
+    }
+  }
+}

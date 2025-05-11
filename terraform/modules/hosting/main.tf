@@ -7,9 +7,14 @@ terraform {
   }
 }
 
-resource "google_firebase_hosting_site" "default" {
+resource "google_firebase_hosting_site" "release" {
   provider = google-beta
-  site_id  = var.site_id
+  site_id  = var.release_site_id
+}
+
+resource "google_firebase_hosting_site" "staging" {
+  provider = google-beta
+  site_id  = var.staging_site_id
 }
 
 # resource "google_firebase_hosting_channel" "default" {
