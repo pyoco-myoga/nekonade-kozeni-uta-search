@@ -11,6 +11,7 @@ import { computedAsync } from "@vueuse/core";
 import { computed } from "vue";
 import Fuse from "fuse.js";
 import { supabase } from "@/common";
+import { storeToRefs } from "pinia";
 
 const userStore = useUserStore();
 const playlistStore = usePlaylistsStore();
@@ -24,11 +25,10 @@ const showPlaylistForm = ref(false);
 const songStore = useSongStore();
 
 const allPrivatePlaylists = computedAsync(async () => {
+  const { playlists } = storeToRefs(playlistStore);
+  const currentPlaylists = Array.from(playlists.value?.values() ?? []);
   const favoritePlaylist = await favoritesStore.getFavoritePlaylist();
-  return [
-    ...(favoritePlaylist ? [favoritePlaylist] : []),
-    ...(playlistStore.playlists?.values() ?? []),
-  ];
+  return [...(favoritePlaylist !== null ? [favoritePlaylist] : []), ...currentPlaylists];
 }, []);
 
 const privateFuse = computed(() => {
@@ -170,7 +170,7 @@ const searchedPublicPlaylists = computed(() => {
     </v-window-item>
     <template v-if="userStore.isLoggedIn()">
       <v-window-item value="private">
-        <template v-for="playlist of searchedPrivatePlaylists">
+        <template v-for="playlist of searchedPrivatePlaylists" :key="playlist.id">
           <PlaylistCard
             :playlist="playlist"
             @play="

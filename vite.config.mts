@@ -36,10 +36,6 @@ export default defineConfig({
             name: "Cal Sans",
             styles: "wght@100;300;400;500;700;900",
           },
-          {
-            name: "M PLUS Rounded 1c",
-            styles: "wght@100;300;400;500;700;900",
-          },
         ],
       },
     }),

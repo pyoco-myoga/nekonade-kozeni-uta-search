@@ -18,7 +18,7 @@ const kozeniColorTheme: ThemeDefinition = {
     primary: "#F790A6",
     secondary: "#A0D8EF",
     "on-primary": "#FFFFFF",
-    "on-background": "#7D7D7D",
+    "on-background": "#5C5C5C",
     surface: "#FFFFFF",
   },
 };

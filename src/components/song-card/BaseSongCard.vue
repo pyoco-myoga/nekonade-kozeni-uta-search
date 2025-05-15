@@ -1,27 +1,64 @@
 <script lang="ts" setup>
-  import type { AlgoliaData } from '@/algolia';
-  import { computed } from 'vue';
+import type { AccompanimentType, AlgoliaData } from "@/algolia";
+import { match } from "ts-pattern";
+import { type Ref, ref } from "vue";
+import { computed } from "vue";
+import { useTheme } from "vuetify/lib/composables/theme.mjs";
+import ShareYoutube from "@/components/share-youtube/ShareYoutube.vue";
+import { getYoutubeUrl } from "@/utils";
 
-  const props = defineProps<{
-    performance: AlgoliaData;
-    isPlaying: boolean;
-    imageUrl: string;
-  }>();
-  const emits = defineEmits<{ click: [] }>();
+const props = defineProps<{
+  performance: AlgoliaData;
+  isPlaying: boolean;
+  imageUrl: string;
+}>();
+const emits = defineEmits<{ click: [] }>();
 
-  const showBottomMenu = defineModel<boolean>();
+const showBottomMenu = defineModel<boolean>();
+const shareYoutubeRef: Ref<InstanceType<typeof ShareYoutube> | null> = ref(null);
 
-  const color = computed(() => {
-    const playingColor = 'grey-lighten-2';
-    const notPlayingColor = 'white';
-    return props.isPlaying ? playingColor : notPlayingColor;
-  });
+const theme = useTheme();
+
+const bottomMenuTiles = [
+  {
+    icon: "mdi-share-variant",
+    color: "blue",
+    title: "共有",
+    click: () => {
+      shareYoutubeRef.value?.popup();
+    },
+    requiredLogin: false,
+  },
+  {
+    icon: "mdi-youtube",
+    color: "red",
+    title: "Youtubeへ移動",
+    click: () => {
+      window.open(getYoutubeUrl(props.performance.videoId, props.performance.startSec));
+    },
+    requiredLogin: false,
+  },
+];
+
+const color = computed(() => {
+  const playingColor = "grey-lighten-2";
+  const notPlayingColor = "white";
+  return props.isPlaying ? playingColor : notPlayingColor;
+});
+
+function accompanimentIcon(accompaniment: AccompanimentType): string {
+  return match(accompaniment)
+    .with("KARAOKE", () => "mdi-music")
+    .with("ELECTRIC", () => "mdi-guitar-electric")
+    .with("ACOUSTIC", () => "mdi-guitar-acoustic")
+    .exhaustive();
+}
 </script>
 
 <template>
   <v-card class="mx-auto" elevation="2" @click="emits('click')">
     <v-sheet class="d-flex" :color="color" height="80">
-      <div class="d-flex me-3">
+      <div class="d-flex me-1">
         <v-btn
           elevation="0"
           height="100%"
@@ -33,14 +70,27 @@
           }"
           @click.stop="() => {}"
         >
-          <v-icon icon="mdi-play" size="x-large" />
+          <v-icon
+            icon="mdi-play"
+            size="x-large"
+            :color="theme.current.value.colors['on-background']"
+          />
         </v-btn>
+      </div>
+      <div class="d-flex me-3 align-center">
+        <v-icon
+          :color="theme.current.value.colors['on-background']"
+          :icon="accompanimentIcon(props.performance.accompaniment)"
+        />
       </div>
       <div class="d-flex flex-column flex-grow-1 overflow-hidden justify-center">
         <v-list-item-title class="overflow-hidden custom-title-style">
           {{ props.performance.song }}
         </v-list-item-title>
-        <v-list-item-subtitle class="overflow-hidden" style="white-space: nowrap">
+        <v-list-item-subtitle
+          class="overflow-hidden"
+          style="white-space: nowrap; line-height: normal"
+        >
           {{ props.performance.artist }}
         </v-list-item-subtitle>
       </div>
@@ -54,6 +104,8 @@
       </div>
     </v-sheet>
   </v-card>
+  <ShareYoutube ref="shareYoutubeRef" :performance="props.performance" />
+  <BottomMenu v-model:show="showBottomMenu" :tiles="bottomMenuTiles" />
 </template>
 
 <style scoped>

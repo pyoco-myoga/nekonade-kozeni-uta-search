@@ -406,7 +406,7 @@ export async function generatePlaylist({
     id,
     name,
     description,
-    playlistPerformances: new Map(playlistPerformances.map((value, index) => [index + 1, value])),
+    playlistPerformances: new Map(playlistPerformances.map((value, index) => [index, value])),
     type: "generated",
     public: false,
   };

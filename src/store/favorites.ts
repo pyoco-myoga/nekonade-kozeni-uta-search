@@ -88,7 +88,7 @@ export const useFavoritesStore = defineStore("favorites", () => {
       return null;
     }
 
-    return generatePlaylist({
+    return await generatePlaylist({
       id: "favorites",
       name: "お気に入り",
       description: "お気に入りプレイリスト",
