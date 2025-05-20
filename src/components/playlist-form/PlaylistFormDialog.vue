@@ -65,7 +65,22 @@ const theme = useTheme();
 <template>
   <v-dialog v-model="show" persistent>
     <v-form @submit.prevent="onClickPlaylistCreate">
-      <v-card prepend-icon="mdi-music" title="プレイリスト作成">
+      <v-card>
+        <v-toolbar
+          :style="{
+            color: theme.current.value.colors['on-primary'],
+            backgroundColor: theme.current.value.colors.primary,
+          }"
+        >
+          <template v-slot:title>
+            <span class="font-weight-bold">
+              <div>
+                <v-icon icon="mdi-music" />
+                プレイリスト作成
+              </div>
+            </span>
+          </template>
+        </v-toolbar>
         <v-card-text>
           <v-text-field v-model="form.name" label="name (required)" :rules="rules" variant="solo" />
           <v-textarea v-model="form.description" label="description (optional)" variant="solo" />

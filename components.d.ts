@@ -20,6 +20,7 @@ declare module 'vue' {
     PlaylistSongList: typeof import('./src/components/playlist-song-list/PlaylistSongList.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    ScrollableText: typeof import('./src/components/utils/ScrollableText.vue')['default']
     SearchArea: typeof import('./src/components/search-area/SearchArea.vue')['default']
     ShareYoutube: typeof import('./src/components/share-youtube/ShareYoutube.vue')['default']
     SongCard: typeof import('./src/components/song-card/SongCard.vue')['default']

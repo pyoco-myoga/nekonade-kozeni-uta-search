@@ -242,7 +242,41 @@ with
 create policy "Users can delete only their own playlist_performances" on public.playlist_performances for delete
   using (user_id = (select auth.uid ()));
 
+create policy "Users can update only their own playlist_performances" on public.playlist_performances for update
+  using (user_id = (select auth.uid ()))
+  with check (user_id = (select auth.uid ()));
+
 alter publication supabase_realtime add table public.playlist_performances;
+
+
+create or replace function normalize_playlist_track_order(
+  _playlist_id uuid
+) returns void as $$
+declare
+  _user_id uuid := auth.uid();
+begin
+  with ordered as (
+    select
+      user_id,
+      playlist_id,
+      track_order,
+      row_number() over (order by track_order) - 1 as new_order
+    from playlist_performances
+    where playlist_id = _playlist_id
+      and user_id = _user_id
+  )
+  update playlist_performances
+  set track_order = ordered.new_order
+  from ordered
+  where playlist_performances.user_id = ordered.user_id
+    and playlist_performances.playlist_id = ordered.playlist_id
+    and playlist_performances.track_order = ordered.track_order
+    and playlist_performances.track_order != ordered.new_order;
+end;
+$$ language plpgsql
+set search_path = public
+security invoker;
+
 
 create or replace function insert_playlist_performance(
   _playlist_id uuid,
@@ -251,6 +285,8 @@ create or replace function insert_playlist_performance(
 declare
   next_order integer;
 begin
+  perform normalize_playlist_track_order(_playlist_id);
+
   select case
     when count(*) = 0 then 0
     else max(track_order) + 1
@@ -275,6 +311,56 @@ $$ language plpgsql
 set search_path = public
 security invoker;
 
+
+create or replace function reorder_playlist_performance(
+  _playlist_id uuid,
+  _from_index integer,
+  _to_index integer
+) returns void as $$
+declare
+  _user_id uuid := auth.uid();
+  _temp_order integer := -1;
+begin
+  if _from_index = _to_index then
+    return;
+  end if;
+
+  update playlist_performances
+  set track_order = _temp_order
+  where playlist_id = _playlist_id
+    and user_id = _user_id
+    and track_order = _from_index;
+
+  if _from_index > _to_index then
+    update playlist_performances
+    set track_order = track_order + 1
+    where playlist_id = _playlist_id
+      and user_id = _user_id
+      and track_order >= _to_index
+      and track_order < _from_index;
+
+  elsif _from_index < _to_index then
+    update playlist_performances
+    set track_order = track_order - 1
+    where playlist_id = _playlist_id
+      and user_id = _user_id
+      and track_order > _from_index
+      and track_order <= _to_index;
+  end if;
+
+  update playlist_performances
+  set track_order = _to_index
+  where playlist_id = _playlist_id
+    and user_id = _user_id
+    and track_order = _temp_order;
+
+  perform normalize_playlist_track_order(_playlist_id);
+end;
+$$ language plpgsql
+set search_path = public
+security invoker;
+
+
 create or replace function delete_playlist_performance(
   _playlist_id uuid,
   _track_order integer
@@ -287,23 +373,7 @@ begin
     and user_id = _user_id
     and track_order = _track_order;
 
-  with ordered as (
-    select
-      user_id,
-      playlist_id,
-      track_order,
-      row_number() over (order by track_order) - 1 as new_order
-    from playlist_performances
-    where playlist_id = _playlist_id
-      and user_id = _user_id
-  )
-  update playlist_performances
-  set track_order = ordered.new_order
-  from ordered
-  where playlist_performances.user_id = ordered.user_id
-    and playlist_performances.playlist_id = ordered.playlist_id
-    and playlist_performances.track_order = ordered.track_order
-    and playlist_performances.track_order != ordered.new_order;
+  perform normalize_playlist_track_order(_playlist_id);
 end;
 $$ language plpgsql
 set search_path = public

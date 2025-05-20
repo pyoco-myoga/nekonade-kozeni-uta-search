@@ -5,6 +5,7 @@ import { type Ref, ref } from "vue";
 import { computed } from "vue";
 import { useTheme } from "vuetify/lib/composables/theme.mjs";
 import ShareYoutube from "@/components/share-youtube/ShareYoutube.vue";
+import ScrollableText from "@/components/utils/ScrollableText.vue";
 import { getYoutubeUrl } from "@/utils";
 
 const props = defineProps<{
@@ -56,8 +57,8 @@ function accompanimentIcon(accompaniment: AccompanimentType): string {
 </script>
 
 <template>
-  <v-card class="mx-auto" elevation="2" @click="emits('click')">
-    <v-sheet class="d-flex" :color="color" height="80">
+  <v-card class="mx-auto" @click="emits('click')">
+    <v-sheet class="d-flex" :color="color" height="80px">
       <div class="d-flex me-1">
         <v-btn
           elevation="0"
@@ -85,7 +86,7 @@ function accompanimentIcon(accompaniment: AccompanimentType): string {
       </div>
       <div class="d-flex flex-column flex-grow-1 overflow-hidden justify-center">
         <v-list-item-title class="overflow-hidden custom-title-style">
-          {{ props.performance.song }}
+          <ScrollableText :text="props.performance.song" :speed="20" :stop-milliseconds="3000" />
         </v-list-item-title>
         <v-list-item-subtitle
           class="overflow-hidden"

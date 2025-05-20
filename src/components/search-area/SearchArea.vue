@@ -1,15 +1,15 @@
 <script lang="ts" setup>
-  import type { SearchQuery } from './SearchQuery';
-  import { ref } from 'vue';
-  import { useTheme } from 'vuetify/lib/composables/theme.mjs';
+import type { SearchQuery } from "./SearchQuery";
+import { ref } from "vue";
+import { useTheme } from "vuetify/lib/composables/theme.mjs";
 
-  const searchQuery = defineModel<SearchQuery>('searchQuery', { required: true });
-  const props = defineProps<{
-    isLoggedIn: boolean;
-  }>();
-  const showSearchOptions = ref(false);
+const searchQuery = defineModel<SearchQuery>("searchQuery", { required: true });
+const props = defineProps<{
+  isLoggedIn: boolean;
+}>();
+const showSearchOptions = ref(false);
 
-  const theme = useTheme();
+const theme = useTheme();
 </script>
 
 <template>
@@ -18,7 +18,6 @@
       <v-text-field
         append-inner-icon="mdi-close"
         density="compact"
-        hide-details
         label="曲名 / アーティスト名"
         :model-value="searchQuery.query"
         prepend-inner-icon="mdi-magnify"
@@ -26,6 +25,7 @@
         variant="solo"
         @click:append-inner="searchQuery.query = ''"
         @update:model-value="(updated) => (searchQuery.query = updated)"
+        hide-details
       >
         <template #append>
           <v-icon
@@ -44,13 +44,7 @@
     <v-expand-transition>
       <v-card v-show="showSearchOptions">
         <v-row>
-          <v-col
-            cols="12"
-            lg="auto"
-            md="auto"
-            sm="auto"
-            xl="auto"
-          >
+          <v-col cols="12" lg="auto" md="auto" sm="auto" xl="auto">
             <v-btn-group background-color="primary" class="elevation-1" dark multiple>
               <template v-if="props.isLoggedIn">
                 <v-btn
@@ -86,13 +80,7 @@
               </v-btn>
             </v-btn-group>
           </v-col>
-          <v-col
-            cols="12"
-            lg="auto"
-            md="auto"
-            sm="auto"
-            xl="auto"
-          >
+          <v-col cols="12" lg="auto" md="auto" sm="auto" xl="auto">
             <v-btn-group background-color="primary" class="elevation-1" dark multiple>
               <v-btn
                 :color="

@@ -4,9 +4,8 @@ import type { Tables } from "@/types/database.types";
 import type { RealtimePostgresChangesPayload } from "@supabase/supabase-js";
 import { defineStore } from "pinia";
 import { ref, type Ref } from "vue";
-import { assertNotUndefined } from "@/utils";
 
-type PlaylistType = "user" | "generated";
+export type PlaylistType = "user" | "generated";
 
 export type Playlist = {
   id: string;
@@ -194,6 +193,7 @@ export const usePlaylistsStore = defineStore("playlists", () => {
           _tags: [],
         });
       } else if (eventType === "DELETE") {
+        console.log(eventType, newRow, oldRow);
         if (oldRow === null) {
           throw Error("rdb query is DELETE, but old row not exists");
         }
@@ -203,15 +203,61 @@ export const usePlaylistsStore = defineStore("playlists", () => {
         }
         playlists.value?.get(playlistId)?.playlistPerformances.delete(trackOrder);
       } else if (eventType === "UPDATE") {
-        const { playlist_id: oldPlaylistId, track_order: oldTrackOrder } = oldRow;
-        if (oldPlaylistId === undefined || oldTrackOrder === undefined) {
+        const { playlist_id: playlistId, track_order: trackOrder, user_id: userId } = newRow;
+        if (playlistId === undefined || trackOrder === undefined || userId === undefined) {
           throw Error("rdb query is UPDATE, but required props not provided");
         }
-        const data = assertNotUndefined(
-          playlists.value?.get(oldPlaylistId)?.playlistPerformances.get(oldTrackOrder)
-        );
-        playlists.value?.get(oldPlaylistId)?.playlistPerformances.delete(oldTrackOrder);
-        playlists.value?.get(oldPlaylistId)?.playlistPerformances.set(newRow.track_order, data);
+
+        const { data, error } = await supabase
+          .from("playlist_performances")
+          .select(
+            `
+            track_order,
+            performances (
+              id,
+              songs (
+                id,
+                name,
+                artists (
+                  id,
+                  name
+                )
+              ),
+              videos (
+                video_id
+              ),
+              accompaniment,
+              length,
+              recommended,
+              start_sec,
+              end_sec
+            )
+          `
+          )
+          .eq("user_id", userId)
+          .eq("playlist_id", playlistId);
+        if (error !== null) {
+          console.error(error);
+          return;
+        }
+        for (const playlistPerformance of data) {
+          playlists.value
+            .get(playlistId)
+            ?.playlistPerformances.set(playlistPerformance.track_order, {
+              id: playlistPerformance.performances.id,
+              artist: playlistPerformance.performances.songs.artists.name,
+              artistId: playlistPerformance.performances.songs.artists.id,
+              song: playlistPerformance.performances.songs.name,
+              songId: playlistPerformance.performances.songs.id,
+              videoId: playlistPerformance.performances.videos.video_id,
+              startSec: playlistPerformance.performances.start_sec,
+              endSec: playlistPerformance.performances.end_sec,
+              recommended: playlistPerformance.performances.recommended,
+              accompaniment: playlistPerformance.performances.accompaniment,
+              length: playlistPerformance.performances.length,
+              _tags: [],
+            });
+        }
       }
     }
   }
@@ -315,6 +361,25 @@ export const usePlaylistsStore = defineStore("playlists", () => {
     }
   }
 
+  async function reorderPlaylist({
+    playlistId,
+    fromIndex,
+    toIndex,
+  }: {
+    playlistId: string;
+    fromIndex: number;
+    toIndex: number;
+  }) {
+    const { error } = await supabase.rpc("reorder_playlist_performance", {
+      _playlist_id: playlistId,
+      _from_index: fromIndex,
+      _to_index: toIndex,
+    });
+    if (error !== null) {
+      console.log(error);
+    }
+  }
+
   async function removeFromPlaylist(playlistId: string, trackOrder: number) {
     const { error } = await supabase.rpc("delete_playlist_performance", {
       _playlist_id: playlistId,
@@ -332,6 +397,7 @@ export const usePlaylistsStore = defineStore("playlists", () => {
     updatePlaylist,
     deletePlaylist,
     addToPlaylist,
+    reorderPlaylist,
     removeFromPlaylist,
     generatePlaylist,
     subscribe,

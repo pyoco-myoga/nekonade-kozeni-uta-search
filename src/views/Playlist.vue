@@ -14,7 +14,7 @@ import { supabase } from "@/common";
 import { storeToRefs } from "pinia";
 
 const userStore = useUserStore();
-const playlistStore = usePlaylistsStore();
+const playlistsStore = usePlaylistsStore();
 const favoritesStore = useFavoritesStore();
 
 const tab: Ref<"private" | "official"> = ref(userStore.user === null ? "official" : "private");
@@ -25,7 +25,7 @@ const showPlaylistForm = ref(false);
 const songStore = useSongStore();
 
 const allPrivatePlaylists = computedAsync(async () => {
-  const { playlists } = storeToRefs(playlistStore);
+  const { playlists } = storeToRefs(playlistsStore);
   const currentPlaylists = Array.from(playlists.value?.values() ?? []);
   const favoritePlaylist = await favoritesStore.getFavoritePlaylist();
   return [...(favoritePlaylist !== null ? [favoritePlaylist] : []), ...currentPlaylists];
@@ -107,13 +107,13 @@ onMounted(async () => {
   allPublicPlaylists.value = playlists;
 });
 
-const publicFuse = computedAsync(async () => {
+const publicFuse = computed(() => {
   return new Fuse(allPublicPlaylists.value, {
     shouldSort: true,
     threshold: 0.4,
     keys: ["name", "description"],
   });
-}, null);
+});
 const searchedPublicPlaylists = computed(() => {
   if (publicFuse.value === null || searchQuery.value === "") {
     return allPublicPlaylists.value;
@@ -155,19 +155,6 @@ const searchedPublicPlaylists = computed(() => {
   </v-container>
 
   <v-window v-model="tab">
-    <v-window-item value="official">
-      <template v-for="playlist of searchedPublicPlaylists">
-        <PlaylistCard
-          :playlist="playlist"
-          @play="
-            () => {
-              songStore.setPerformancePlaylist(Array.from(playlist.playlistPerformances.values()));
-              songStore.playNextPlaylistPerformance();
-            }
-          "
-        />
-      </template>
-    </v-window-item>
     <template v-if="userStore.isLoggedIn()">
       <v-window-item value="private">
         <template v-for="playlist of searchedPrivatePlaylists" :key="playlist.id">
@@ -185,6 +172,19 @@ const searchedPublicPlaylists = computed(() => {
         </template>
       </v-window-item>
     </template>
+    <v-window-item value="official">
+      <template v-for="playlist of searchedPublicPlaylists">
+        <PlaylistCard
+          :playlist="playlist"
+          @play="
+            () => {
+              songStore.setPerformancePlaylist(Array.from(playlist.playlistPerformances.values()));
+              songStore.playNextPlaylistPerformance();
+            }
+          "
+        />
+      </template>
+    </v-window-item>
   </v-window>
 
   <PlaylistFormDialog v-model:show="showPlaylistForm" />

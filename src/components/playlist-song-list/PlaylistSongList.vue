@@ -4,6 +4,10 @@ import { useFavoritesStore } from "@/store/favorites";
 import { type Playlist, usePlaylistsStore } from "@/store/playlists";
 import { useSongStore } from "@/store/song";
 import { useTheme } from "vuetify/lib/composables/theme.mjs";
+import { VueDraggable } from "vue-draggable-plus";
+import { ref } from "vue";
+import { watch } from "vue";
+import type { AlgoliaData } from "@/algolia";
 
 const show = defineModel<boolean>("show", { required: true });
 const props = defineProps<{
@@ -15,6 +19,18 @@ const emits = defineEmits<{
 const favoriteStore = useFavoritesStore();
 const playlistStore = usePlaylistsStore();
 const songStore = useSongStore();
+
+const playlistPerformanceList = ref<Array<AlgoliaData>>([]);
+watch(
+  () => props.playlist.playlistPerformances,
+  () => {
+    playlistPerformanceList.value = Array.from(props.playlist.playlistPerformances.entries())
+      .sort(([order1], [order2]) => order1 - order2)
+      .map(([_, performance]) => performance);
+  },
+  { deep: true, immediate: true }
+);
+
 const theme = useTheme();
 </script>
 
@@ -63,22 +79,47 @@ const theme = useTheme();
         <div class="mb-4">
           {{ props.playlist.description }}
         </div>
-        <template
-          v-for="[trackOrder, performance] of props.playlist.playlistPerformances.entries()"
-          :key="performance.id"
+        <VueDraggable
+          v-model="playlistPerformanceList"
+          :animation="150"
+          @end="
+            async (e) => {
+              if (e.oldIndex === undefined || e.newIndex === undefined) {
+                console.error('error');
+                return;
+              }
+              await playlistStore.reorderPlaylist({
+                playlistId: props.playlist.id,
+                fromIndex: e.oldIndex,
+                toIndex: e.newIndex,
+              });
+            }
+          "
+          handle=".handle"
         >
-          <PlaylistSongCard
-            :track-order="trackOrder"
-            :is-favorite="favoriteStore.isFavorite(performance)"
-            :is-playing="false"
-            :playlist="playlist"
-            @click="
-              songStore.setPerformancePlaylist(Array.from(playlist.playlistPerformances.values()));
-              songStore.playNextPlaylistPerformance(trackOrder);
-            "
-            @remove-from-playlist="playlistStore.removeFromPlaylist(playlist.id, trackOrder)"
-          />
-        </template>
+          <template
+            v-for="(performance, trackOrder) of playlistPerformanceList"
+            :key="performance.id"
+          >
+            <PlaylistSongCard
+              :performance="performance"
+              :playlist-type="playlist.type"
+              :is-favorite="favoriteStore.isFavorite(performance)"
+              :is-playing="false"
+              @click="
+                songStore.setPerformancePlaylist(
+                  Array.from(playlist.playlistPerformances.values())
+                );
+                songStore.playNextPlaylistPerformance(trackOrder);
+              "
+              @remove-from-playlist="playlistStore.removeFromPlaylist(playlist.id, trackOrder)"
+            >
+              <template v-if="playlist.type === 'user'" #hundle>
+                <v-icon class="handle" icon="mdi-menu" />
+              </template>
+            </PlaylistSongCard>
+          </template>
+        </VueDraggable>
       </v-card-text>
     </v-card>
   </v-dialog>

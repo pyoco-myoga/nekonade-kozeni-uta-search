@@ -4,7 +4,7 @@ import Vue from "@vitejs/plugin-vue";
 import Vuetify, { transformAssetUrls } from "vite-plugin-vuetify";
 import ViteFonts from "unplugin-fonts/vite";
 import VueRouter from "unplugin-vue-router/vite";
-import BasicSsl from "@vitejs/plugin-basic-ssl";
+import Sitemap from "vite-plugin-sitemap";
 
 // Utilities
 import { defineConfig } from "vite";
@@ -39,7 +39,9 @@ export default defineConfig({
         ],
       },
     }),
-    BasicSsl(),
+    Sitemap({
+      hostname: `https://${process.env.npm_package_name}.web.app/`,
+    }),
   ],
   optimizeDeps: {
     exclude: [

@@ -29,11 +29,7 @@ const drawer = ref(false);
             store.setPerformancePlaylist([]);
           }
         "
-        @ended="
-          () => {
-            store.setPerformancePlaylist([]);
-          }
-        "
+        @ended="store.playNextPlaylistPerformance"
         @next="store.playNextPlaylistPerformance"
         @previous="store.playPreviousPlaylistPerformance"
       />
