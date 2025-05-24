@@ -1,10 +1,8 @@
 <script lang="ts" setup>
 import PlaylistSongCard from "@/components/song-card/PlaylistSongCard.vue";
-import { useFavoritesStore } from "@/store/favorites";
-import { type Playlist, usePlaylistsStore } from "@/store/playlists";
+import { type Playlist } from "@/store/playlists";
 import { useSongStore } from "@/store/song";
 import { useTheme } from "vuetify/lib/composables/theme.mjs";
-import { VueDraggable } from "vue-draggable-plus";
 import { ref } from "vue";
 import { watch } from "vue";
 import type { AlgoliaData } from "@/algolia";
@@ -16,8 +14,6 @@ const props = defineProps<{
 const emits = defineEmits<{
   play: [];
 }>();
-const favoriteStore = useFavoritesStore();
-const playlistStore = usePlaylistsStore();
 const songStore = useSongStore();
 
 const playlistPerformanceList = ref<Array<AlgoliaData>>([]);
@@ -30,6 +26,8 @@ watch(
   },
   { deep: true, immediate: true }
 );
+
+const showPlaylistEditForm = ref(false);
 
 const theme = useTheme();
 </script>
@@ -51,19 +49,10 @@ const theme = useTheme();
         }"
       >
         <template v-slot:title>
-          <span class="font-weight-bold">
+          <span class="d-flex align-center font-weight-bold">
+            <v-icon icon="mdi-music" />
             {{ props.playlist.name }}
           </span>
-        </template>
-        <template v-slot:prepend>
-          <v-btn
-            :style="{
-              color: theme.current.value.colors['on-background'],
-              backgroundColor: theme.current.value.colors.secondary,
-            }"
-            icon="mdi-play"
-            @click.stop="emits('play')"
-          />
         </template>
         <template v-slot:append>
           <v-btn :elevation="0" icon="mdi-close-circle" @click.stop="show = false" />
@@ -76,51 +65,59 @@ const theme = useTheme();
           overflowY: 'auto',
         }"
       >
-        <div class="mb-4">
+        <v-row>
+          <v-col>
+            <v-btn
+              :style="{
+                color: theme.current.value.colors['on-background'],
+                backgroundColor: theme.current.value.colors.secondary,
+              }"
+              icon="mdi-pencil"
+              @click="showPlaylistEditForm = true"
+            />
+          </v-col>
+          <v-col class="d-flex justify-end">
+            <v-btn
+              :style="{
+                color: theme.current.value.colors['on-background'],
+                backgroundColor: theme.current.value.colors.secondary,
+              }"
+              icon="mdi-play"
+              @click="emits('play')"
+            />
+          </v-col>
+        </v-row>
+        <div class="ma-4">
           {{ props.playlist.description }}
         </div>
-        <VueDraggable
-          v-model="playlistPerformanceList"
-          :animation="150"
-          @end="
-            async (e) => {
-              if (e.oldIndex === undefined || e.newIndex === undefined) {
-                console.error('error');
-                return;
-              }
-              await playlistStore.reorderPlaylist({
-                playlistId: props.playlist.id,
-                fromIndex: e.oldIndex,
-                toIndex: e.newIndex,
-              });
-            }
-          "
-          handle=".handle"
+        <template
+          v-for="(performance, trackOrder) of playlistPerformanceList"
+          :key="performance.id"
         >
-          <template
-            v-for="(performance, trackOrder) of playlistPerformanceList"
-            :key="performance.id"
+          <PlaylistSongCard
+            :performance="performance"
+            :playlist-type="playlist.type"
+            :is-playing="false"
+            @click="
+              songStore.setPerformancePlaylist(Array.from(playlist.playlistPerformances.values()));
+              songStore.playNextPlaylistPerformance(trackOrder);
+            "
           >
-            <PlaylistSongCard
-              :performance="performance"
-              :playlist-type="playlist.type"
-              :is-favorite="favoriteStore.isFavorite(performance)"
-              :is-playing="false"
-              @click="
-                songStore.setPerformancePlaylist(
-                  Array.from(playlist.playlistPerformances.values())
-                );
-                songStore.playNextPlaylistPerformance(trackOrder);
-              "
-              @remove-from-playlist="playlistStore.removeFromPlaylist(playlist.id, trackOrder)"
-            >
-              <template v-if="playlist.type === 'user'" #hundle>
-                <v-icon class="handle" icon="mdi-menu" />
-              </template>
-            </PlaylistSongCard>
-          </template>
-        </VueDraggable>
+          </PlaylistSongCard>
+        </template>
       </v-card-text>
     </v-card>
   </v-dialog>
+
+  <PlaylistFormDialog
+    v-model:show="showPlaylistEditForm"
+    :playlist="{
+      id: props.playlist.id,
+      name: props.playlist.name,
+      description: props.playlist.description,
+      public: props.playlist.public,
+      playlistPerformances: props.playlist.playlistPerformances,
+      type: props.playlist.type,
+    }"
+  />
 </template>

@@ -394,6 +394,10 @@ export type Database = {
         Args: { _playlist_id: string; _from_index: number; _to_index: number }
         Returns: undefined
       }
+      update_playlist_performances: {
+        Args: { _performance_ids: Json; _playlist_id: string }
+        Returns: undefined
+      }
     }
     Enums: {
       performance_accompaniment: "KARAOKE" | "ACOUSTIC" | "ELECTRIC"

@@ -12,6 +12,7 @@ import { computed } from "vue";
 import Fuse from "fuse.js";
 import { supabase } from "@/common";
 import { storeToRefs } from "pinia";
+import { useTheme } from "vuetify/lib/composables/theme.mjs";
 
 const userStore = useUserStore();
 const playlistsStore = usePlaylistsStore();
@@ -121,14 +122,20 @@ const searchedPublicPlaylists = computed(() => {
     return publicFuse.value.search(searchQuery.value).map(({ item }) => item);
   }
 });
+
+const theme = useTheme();
 </script>
 
 <template>
   <v-tabs v-model="tab" fixed-tabs>
     <template v-if="userStore.isLoggedIn()">
-      <v-tab value="private"> PRIVATE </v-tab>
+      <v-tab :slider-color="theme.global.current.value.colors.secondary" value="private">
+        PRIVATE
+      </v-tab>
     </template>
-    <v-tab value="official"> OFFICIAL </v-tab>
+    <v-tab :slider-color="theme.global.current.value.colors.secondary" value="official">
+      OFFICIAL
+    </v-tab>
   </v-tabs>
 
   <v-container>
@@ -142,13 +149,18 @@ const searchedPublicPlaylists = computed(() => {
           label="プレイリスト名"
           prepend-inner-icon="mdi-magnify"
           single-line
-          variant="solo"
+          variant="outlined"
           @click:append-inner="searchQuery = ''"
         />
       </v-col>
       <template v-if="userStore.isLoggedIn()">
         <v-col cols="auto">
-          <v-btn icon="mdi-plus" @click="showPlaylistForm = true" />
+          <v-btn
+            variant="outlined"
+            :color="theme.global.current.value.colors.primary"
+            icon="mdi-plus"
+            @click="showPlaylistForm = true"
+          />
         </v-col>
       </template>
     </v-row>

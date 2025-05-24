@@ -25,14 +25,10 @@ export const useFavoritesStore = defineStore("favorites", () => {
       .eq("user_id", userId)
       .overrideTypes<Array<Tables<"favorites">>>();
     if (error !== null) {
-      console.log("Failed to fetch favorites: ", error);
+      console.error(error);
       return;
     }
-    if (error === null) {
-      favorites.value = data.map((f) => f.performance_id);
-    } else {
-      console.log("failed to get favorites");
-    }
+    favorites.value = data.map((f) => f.performance_id);
   }
 
   function handleRealtimePayload({

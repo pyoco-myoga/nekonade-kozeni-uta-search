@@ -56,7 +56,7 @@ export const usePlaylistsStore = defineStore("playlists", () => {
       `
       )
       .eq("user_id", userId)
-      .order("track_order", { foreignTable: "playlist_performances", ascending: true });
+      .order("track_order", { referencedTable: "playlist_performances", ascending: true });
     if (error !== null) {
       console.error("Failed to fetch playlists: ", error);
       return;
@@ -320,24 +320,40 @@ export const usePlaylistsStore = defineStore("playlists", () => {
     description,
     userId,
     isPublic,
+    playlistPerformanceIds,
   }: {
     id: string;
     name: string;
     description: string;
     userId: string;
     isPublic: boolean;
+    playlistPerformanceIds: Array<string>;
   }) {
-    const { error } = await supabase
-      .from("playlists")
-      .update({
-        name,
-        description,
-        public: isPublic,
-      })
-      .eq("id", id)
-      .eq("user_id", userId);
-    if (error !== null) {
-      console.error(error);
+    {
+      const { error } = await supabase
+        .from("playlists")
+        .update({
+          name,
+          description,
+          public: isPublic,
+        })
+        .eq("id", id)
+        .eq("user_id", userId);
+      if (error !== null) {
+        console.error(error);
+      }
+    }
+
+    {
+      const { error } = await supabase.rpc("update_playlist_performances", {
+        _performance_ids: Object.fromEntries(
+          playlistPerformanceIds.map((value, index) => [index, value])
+        ),
+        _playlist_id: id,
+      });
+      if (error !== null) {
+        console.error(error);
+      }
     }
   }
 

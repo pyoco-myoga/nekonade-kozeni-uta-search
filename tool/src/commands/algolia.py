@@ -91,11 +91,34 @@ class AlgoliaUploadCommand(BaseAlgoliaCommand):
             index_name=self.settings.algolia.index_name,
             objects=[
                 {
-                    "objectID": data.id.hex,
+                    "objectID": str(data.id),
                     **data.model_dump(mode="json", by_alias=True)
                 }
                 
                 for data in algolia_data
+            ]
+        )
+
+class AlgoliaDeleteAllCommand(BaseAlgoliaCommand):
+    description: str = "upload data to algolia"
+
+    def run(self, command_name: list[str]):
+        response = self.client().search_single_index(
+            index_name=self.settings.algolia.index_name,
+            search_params={"query": ""}
+        )
+
+        existing_performances: dict[UUID4, AlgoliaData] = {}
+        for hit in response.hits:
+            data = AlgoliaData.model_validate(hit)
+            existing_performances[data.id] = data
+
+        performances = Performance.get_all()
+
+        self.client().delete_objects(
+            index_name=self.settings.algolia.index_name,
+            object_ids=[
+                performance.id.hex for performance in performances
             ]
         )
 
@@ -121,4 +144,5 @@ class AlgoliaCommand(BaseCommand):
         return {
             "upload": AlgoliaUploadCommand(),
             "search": AlgoliaSearchCommand(),
+            # "delete-all": AlgoliaDeleteAllCommand(),
         }

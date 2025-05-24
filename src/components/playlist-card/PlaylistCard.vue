@@ -83,6 +83,8 @@ const bottomMenuTiles = [
       name: props.playlist.name,
       description: props.playlist.description,
       public: props.playlist.public,
+      playlistPerformances: props.playlist.playlistPerformances,
+      type: props.playlist.type,
     }"
   />
   <BottomMenu v-model:show="showBottomMenu" :tiles="bottomMenuTiles" />

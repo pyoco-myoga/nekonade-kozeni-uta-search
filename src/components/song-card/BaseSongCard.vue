@@ -6,13 +6,20 @@ import { computed } from "vue";
 import { useTheme } from "vuetify/lib/composables/theme.mjs";
 import ShareYoutube from "@/components/share-youtube/ShareYoutube.vue";
 import ScrollableText from "@/components/utils/ScrollableText.vue";
+import type { BottomMenuTile } from "@/components/bottom-menu/BottomMenu.vue";
 import { getYoutubeUrl } from "@/utils";
 
-const props = defineProps<{
-  performance: AlgoliaData;
-  isPlaying: boolean;
-  imageUrl: string;
-}>();
+const props = withDefaults(
+  defineProps<{
+    performance: AlgoliaData;
+    isPlaying: boolean;
+    imageUrl: string;
+    extraBottomMenu?: Array<BottomMenuTile>;
+  }>(),
+  {
+    extraBottomMenu: () => [],
+  }
+);
 const emits = defineEmits<{ click: [] }>();
 
 const showBottomMenu = defineModel<boolean>();
@@ -20,7 +27,7 @@ const shareYoutubeRef: Ref<InstanceType<typeof ShareYoutube> | null> = ref(null)
 
 const theme = useTheme();
 
-const bottomMenuTiles = [
+const bottomMenuTiles: Array<BottomMenuTile> = [
   {
     icon: "mdi-share-variant",
     color: "blue",
@@ -39,6 +46,7 @@ const bottomMenuTiles = [
     },
     requiredLogin: false,
   },
+  ...props.extraBottomMenu,
 ];
 
 const color = computed(() => {

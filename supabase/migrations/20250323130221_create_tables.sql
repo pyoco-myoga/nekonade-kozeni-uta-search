@@ -360,7 +360,6 @@ $$ language plpgsql
 set search_path = public
 security invoker;
 
-
 create or replace function delete_playlist_performance(
   _playlist_id uuid,
   _track_order integer
@@ -374,6 +373,40 @@ begin
     and track_order = _track_order;
 
   perform normalize_playlist_track_order(_playlist_id);
+end;
+$$ language plpgsql
+set search_path = public
+security invoker;
+
+create or replace function update_playlist_performances(
+  _performance_ids jsonb,  -- key: order, value: performance_id
+  _playlist_id uuid
+) returns void as $$
+declare
+  _user_id uuid := auth.uid();
+  item record;
+begin
+  delete from playlist_performances
+  where user_id = _user_id
+    and playlist_id = _playlist_id;
+
+  for item in
+    select key::int as track_order, value::uuid as performance_id
+    from jsonb_each_text(_performance_ids)
+    order by key::int
+  loop
+    insert into playlist_performances (
+      playlist_id,
+      performance_id,
+      user_id,
+      track_order
+    ) values (
+      _playlist_id,
+      item.performance_id,
+      _user_id,
+      item.track_order
+    );
+  end loop;
 end;
 $$ language plpgsql
 set search_path = public

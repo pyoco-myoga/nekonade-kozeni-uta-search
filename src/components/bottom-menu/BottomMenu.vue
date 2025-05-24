@@ -1,14 +1,17 @@
 <script lang="ts" setup>
 import { useUserStore } from "@/store/user";
 const store = useUserStore();
+
+export type BottomMenuTile = {
+  icon: string;
+  color: string;
+  title: string;
+  click: () => void;
+  requiredLogin: boolean;
+};
+
 const props = defineProps<{
-  tiles: {
-    icon: string;
-    color: string;
-    title: string;
-    click: () => void;
-    requiredLogin: boolean;
-  }[];
+  tiles: Array<BottomMenuTile>;
 }>();
 const show = defineModel<boolean>("show");
 </script>

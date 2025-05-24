@@ -74,6 +74,10 @@ async function search(
       query: searchQuery.query,
       hitsPerPage: ALGOLIA_HITS_PER_PAGE,
       page,
+      filters:
+        searchQuery.options.favoriteOnly && favoriteStore.favorites !== null
+          ? favoriteStore.favorites.map((uuid) => `objectID:${uuid}`).join(" OR ")
+          : "",
       facets: ["recommended", "length", "accompaniment", "videoId"],
       facetFilters: [
         ...(searchQuery.options.recommendedOnly ? ["recommended:true"] : []),
