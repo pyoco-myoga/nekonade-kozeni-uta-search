@@ -127,7 +127,6 @@ const theme = useTheme();
                       console.log(trackOrder);
                     "
                   />
-                  {{ trackOrder }}
                   <template v-if="props.playlist.type === 'user'">
                     <v-btn :elevation="0" class="handle" icon="mdi-menu" />
                   </template>
