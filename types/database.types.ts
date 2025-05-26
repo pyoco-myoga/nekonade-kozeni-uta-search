@@ -121,6 +121,7 @@ export type Database = {
       performances: {
         Row: {
           accompaniment: Database["public"]["Enums"]["performance_accompaniment"]
+          collaboration: boolean
           end_sec: number
           id: string
           length: Database["public"]["Enums"]["performance_length"]
@@ -131,6 +132,7 @@ export type Database = {
         }
         Insert: {
           accompaniment: Database["public"]["Enums"]["performance_accompaniment"]
+          collaboration?: boolean
           end_sec: number
           id?: string
           length: Database["public"]["Enums"]["performance_length"]
@@ -141,6 +143,7 @@ export type Database = {
         }
         Update: {
           accompaniment?: Database["public"]["Enums"]["performance_accompaniment"]
+          collaboration?: boolean
           end_sec?: number
           id?: string
           length?: Database["public"]["Enums"]["performance_length"]

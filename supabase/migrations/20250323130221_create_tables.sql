@@ -38,6 +38,7 @@ create table if not exists public.performances (
   recommended boolean not null,
   start_sec integer not null check (start_sec >= 0),
   end_sec integer not null check (start_sec <= end_sec)
+  collaboration boolean not null default false
 );
 
 create table if not exists public.favorites (
