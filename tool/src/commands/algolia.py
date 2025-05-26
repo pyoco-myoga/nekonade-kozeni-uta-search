@@ -32,6 +32,7 @@ class AlgoliaData(BaseModel):
     recommended: bool
     accompaniment: AccompanimentType
     length: LengthType
+    collaboration: bool
     _tags: list[str]
 
     model_config = ConfigDict(
@@ -82,6 +83,7 @@ class AlgoliaUploadCommand(BaseAlgoliaCommand):
                     recommended=performance.recommended,
                     accompaniment=performance.accompaniment,
                     length=performance.length,
+                    collaboration=performance.collaboration,
                     _tags=[],
                 )
             )

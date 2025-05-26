@@ -224,6 +224,7 @@ class Performance(BaseTable):
     recommended: bool
     start_sec: int
     end_sec: int
+    collaboration: bool
 
     @classmethod
     def is_exists(cls, id: UUID4) -> bool:

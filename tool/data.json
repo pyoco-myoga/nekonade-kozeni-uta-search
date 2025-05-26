@@ -519,7 +519,8 @@
             "length": "FULL",
             "recommended": true,
             "start_sec": 1917,
-            "end_sec": 2087
+            "end_sec": 2087,
+            "collaboration": false
         },
         {
             "id": "520adc05-5062-410a-92ba-98a86cb00f28",
@@ -529,7 +530,8 @@
             "length": "FULL",
             "recommended": true,
             "start_sec": 2333,
-            "end_sec": 2510
+            "end_sec": 2510,
+            "collaboration": false
         },
         {
             "id": "74e0c6c8-d589-4ee7-85b9-93f19a53a3f8",
@@ -539,7 +541,8 @@
             "length": "FULL",
             "recommended": true,
             "start_sec": 2750,
-            "end_sec": 2984
+            "end_sec": 2984,
+            "collaboration": false
         },
         {
             "id": "0f63ccd2-9c22-4afc-b097-82a748136c18",
@@ -549,7 +552,8 @@
             "length": "FULL",
             "recommended": true,
             "start_sec": 412,
-            "end_sec": 684
+            "end_sec": 684,
+            "collaboration": false
         },
         {
             "id": "978e9e47-4453-4b1b-80c0-80e74f45a434",
@@ -559,7 +563,8 @@
             "length": "FULL",
             "recommended": true,
             "start_sec": 1047,
-            "end_sec": 1302
+            "end_sec": 1302,
+            "collaboration": false
         },
         {
             "id": "690c62b6-4fcf-4b4d-9137-4434644d9e1c",
@@ -569,7 +574,8 @@
             "length": "FULL",
             "recommended": true,
             "start_sec": 1564,
-            "end_sec": 1722
+            "end_sec": 1722,
+            "collaboration": false
         },
         {
             "id": "f8f33a15-3c93-402a-856c-6f0172ca4c21",
@@ -579,7 +585,8 @@
             "length": "FULL",
             "recommended": true,
             "start_sec": 1943,
-            "end_sec": 2236
+            "end_sec": 2236,
+            "collaboration": false
         },
         {
             "id": "e7918d96-7db8-481f-a018-dea4a60bfda6",
@@ -589,7 +596,8 @@
             "length": "FULL",
             "recommended": true,
             "start_sec": 2572,
-            "end_sec": 2795
+            "end_sec": 2795,
+            "collaboration": false
         },
         {
             "id": "6d36bd38-3ad0-4ff4-a027-387e7b0aedd9",
@@ -599,7 +607,8 @@
             "length": "FULL",
             "recommended": true,
             "start_sec": 3292,
-            "end_sec": 3561
+            "end_sec": 3561,
+            "collaboration": false
         },
         {
             "id": "49ae8e43-ae00-4521-a3c8-0256ddd26ece",
@@ -609,7 +618,8 @@
             "length": "FULL",
             "recommended": true,
             "start_sec": 4125,
-            "end_sec": 4364
+            "end_sec": 4364,
+            "collaboration": false
         },
         {
             "id": "070d8d26-9a1f-4898-8fae-4870bb4c749d",
@@ -619,7 +629,8 @@
             "length": "FULL",
             "recommended": true,
             "start_sec": 473,
-            "end_sec": 712
+            "end_sec": 712,
+            "collaboration": false
         },
         {
             "id": "945116cf-eccf-4f3a-a4b9-bdfc6fbf158f",
@@ -629,7 +640,8 @@
             "length": "FULL",
             "recommended": true,
             "start_sec": 964,
-            "end_sec": 1127
+            "end_sec": 1127,
+            "collaboration": false
         },
         {
             "id": "5a959318-3585-4ad2-8e12-38699bf32fd3",
@@ -639,7 +651,8 @@
             "length": "FULL",
             "recommended": true,
             "start_sec": 1321,
-            "end_sec": 1566
+            "end_sec": 1566,
+            "collaboration": false
         },
         {
             "id": "b7957168-ee00-4475-906f-e61129852192",
@@ -649,7 +662,8 @@
             "length": "FULL",
             "recommended": true,
             "start_sec": 2522,
-            "end_sec": 2748
+            "end_sec": 2748,
+            "collaboration": false
         },
         {
             "id": "aa4e66ca-ba57-41c9-9c53-789567a2d530",
@@ -659,7 +673,8 @@
             "length": "FULL",
             "recommended": true,
             "start_sec": 3164,
-            "end_sec": 3363
+            "end_sec": 3363,
+            "collaboration": false
         },
         {
             "id": "6063ba47-d1d4-46dc-a121-e8ed283cdcc9",
@@ -669,7 +684,8 @@
             "length": "FULL",
             "recommended": true,
             "start_sec": 3567,
-            "end_sec": 3923
+            "end_sec": 3923,
+            "collaboration": false
         },
         {
             "id": "00c3fe3b-ea74-45ae-81c8-26e8adcfc8af",
@@ -679,7 +695,8 @@
             "length": "FULL",
             "recommended": true,
             "start_sec": 2203,
-            "end_sec": 2397
+            "end_sec": 2397,
+            "collaboration": false
         },
         {
             "id": "f2ab1e41-1947-4511-83e4-0d2a03a6914c",
@@ -689,7 +706,8 @@
             "length": "FULL",
             "recommended": true,
             "start_sec": 2814,
-            "end_sec": 3037
+            "end_sec": 3037,
+            "collaboration": false
         },
         {
             "id": "6a012005-9595-413f-bc7f-e9fd64a3f686",
@@ -699,7 +717,8 @@
             "length": "FULL",
             "recommended": true,
             "start_sec": 3405,
-            "end_sec": 3775
+            "end_sec": 3775,
+            "collaboration": false
         },
         {
             "id": "19d2d199-0ad1-4718-a146-8ae5e9f16824",
@@ -709,7 +728,8 @@
             "length": "FULL",
             "recommended": true,
             "start_sec": 4512,
-            "end_sec": 4665
+            "end_sec": 4665,
+            "collaboration": false
         },
         {
             "id": "47bb1712-7e3a-40b1-a03e-a1571e4f3cf7",
@@ -719,7 +739,8 @@
             "length": "FULL",
             "recommended": true,
             "start_sec": 490,
-            "end_sec": 657
+            "end_sec": 657,
+            "collaboration": false
         },
         {
             "id": "7f5468eb-a1aa-4bb7-a7ad-734023d69f43",
@@ -729,7 +750,8 @@
             "length": "FULL",
             "recommended": true,
             "start_sec": 868,
-            "end_sec": 1283
+            "end_sec": 1283,
+            "collaboration": false
         },
         {
             "id": "4bc6721e-bddf-4b22-9e65-224c2dfc5853",
@@ -739,7 +761,8 @@
             "length": "FULL",
             "recommended": true,
             "start_sec": 1499,
-            "end_sec": 1645
+            "end_sec": 1645,
+            "collaboration": false
         },
         {
             "id": "c258ea42-b531-4295-80f7-73b8d9a9f675",
@@ -749,7 +772,8 @@
             "length": "FULL",
             "recommended": true,
             "start_sec": 1872,
-            "end_sec": 2070
+            "end_sec": 2070,
+            "collaboration": false
         },
         {
             "id": "8e616de7-de47-423c-b5b4-f47f1a1b1ccd",
@@ -759,7 +783,8 @@
             "length": "FULL",
             "recommended": true,
             "start_sec": 2310,
-            "end_sec": 2571
+            "end_sec": 2571,
+            "collaboration": false
         },
         {
             "id": "7ceacff1-a80f-4a28-97a7-7b9061c1e099",
@@ -769,7 +794,8 @@
             "length": "FULL",
             "recommended": true,
             "start_sec": 2804,
-            "end_sec": 2985
+            "end_sec": 2985,
+            "collaboration": false
         },
         {
             "id": "3654aaeb-735c-4070-918b-611a45da923d",
@@ -779,7 +805,8 @@
             "length": "FULL",
             "recommended": true,
             "start_sec": 3350,
-            "end_sec": 3687
+            "end_sec": 3687,
+            "collaboration": false
         },
         {
             "id": "00bdf3b2-b4d1-48cf-9f7f-2ed25c158e57",
@@ -789,7 +816,8 @@
             "length": "FULL",
             "recommended": true,
             "start_sec": 776,
-            "end_sec": 1029
+            "end_sec": 1029,
+            "collaboration": false
         },
         {
             "id": "db703910-303f-4ed1-afab-de2bed05a351",
@@ -799,7 +827,8 @@
             "length": "FULL",
             "recommended": true,
             "start_sec": 1374,
-            "end_sec": 1562
+            "end_sec": 1562,
+            "collaboration": false
         },
         {
             "id": "3dbea828-91aa-4217-9583-e6879bf01e41",
@@ -809,7 +838,8 @@
             "length": "FULL",
             "recommended": true,
             "start_sec": 1916,
-            "end_sec": 2161
+            "end_sec": 2161,
+            "collaboration": false
         },
         {
             "id": "d3b44d12-ab2d-46ae-8a1f-b0081c0adbcf",
@@ -819,7 +849,8 @@
             "length": "FULL",
             "recommended": true,
             "start_sec": 2439,
-            "end_sec": 2695
+            "end_sec": 2695,
+            "collaboration": false
         },
         {
             "id": "e760824c-0c33-49e2-994c-a3eaedd09247",
@@ -829,7 +860,8 @@
             "length": "FULL",
             "recommended": true,
             "start_sec": 3054,
-            "end_sec": 3321
+            "end_sec": 3321,
+            "collaboration": false
         },
         {
             "id": "a3fc7185-075c-4207-b139-af9298c03a14",
@@ -839,7 +871,8 @@
             "length": "FULL",
             "recommended": true,
             "start_sec": 3540,
-            "end_sec": 3760
+            "end_sec": 3760,
+            "collaboration": false
         },
         {
             "id": "65d18500-2f10-4527-87c1-9f8d915c85e5",
@@ -849,7 +882,8 @@
             "length": "FULL",
             "recommended": true,
             "start_sec": 4839,
-            "end_sec": 5014
+            "end_sec": 5014,
+            "collaboration": false
         },
         {
             "id": "40fdba06-22bc-47ef-ae1b-8168dcbe6fc5",
@@ -859,7 +893,8 @@
             "length": "FULL",
             "recommended": true,
             "start_sec": 5270,
-            "end_sec": 5434
+            "end_sec": 5434,
+            "collaboration": false
         },
         {
             "id": "7fdef905-b30f-461c-b8c0-fdc9a042bc8d",
@@ -869,7 +904,8 @@
             "length": "FULL",
             "recommended": true,
             "start_sec": 5543,
-            "end_sec": 5765
+            "end_sec": 5765,
+            "collaboration": false
         },
         {
             "id": "09f50078-af93-4c55-ab4f-0bc1fe92148d",
@@ -879,7 +915,8 @@
             "length": "FULL",
             "recommended": true,
             "start_sec": 5923,
-            "end_sec": 6125
+            "end_sec": 6125,
+            "collaboration": false
         },
         {
             "id": "971f4c8d-a2f6-4190-9832-a9e5132e7f3f",
@@ -889,7 +926,8 @@
             "length": "FULL",
             "recommended": true,
             "start_sec": 3787,
-            "end_sec": 4142
+            "end_sec": 4142,
+            "collaboration": false
         },
         {
             "id": "4f6ce07e-be82-4405-ade8-c8bc614ef8d1",
@@ -899,7 +937,8 @@
             "length": "FULL",
             "recommended": true,
             "start_sec": 4644,
-            "end_sec": 4904
+            "end_sec": 4904,
+            "collaboration": false
         },
         {
             "id": "9d8f278b-0e60-4125-84cf-89da56a98584",
@@ -909,7 +948,8 @@
             "length": "FULL",
             "recommended": true,
             "start_sec": 5886,
-            "end_sec": 6098
+            "end_sec": 6098,
+            "collaboration": false
         },
         {
             "id": "b1558084-ca65-4573-be0d-21df52784778",
@@ -919,7 +959,8 @@
             "length": "FULL",
             "recommended": true,
             "start_sec": 6658,
-            "end_sec": 6902
+            "end_sec": 6902,
+            "collaboration": false
         },
         {
             "id": "8b95272d-cb41-4186-8983-69a60703686d",
@@ -929,7 +970,8 @@
             "length": "FULL",
             "recommended": false,
             "start_sec": 3582,
-            "end_sec": 3834
+            "end_sec": 3834,
+            "collaboration": false
         },
         {
             "id": "836cb02b-5651-4f13-b37f-f58fc1661ced",
@@ -939,7 +981,8 @@
             "length": "FULL",
             "recommended": false,
             "start_sec": 6951,
-            "end_sec": 7109
+            "end_sec": 7109,
+            "collaboration": false
         },
         {
             "id": "8c051f84-5f26-4440-a0b8-cd9fba7aac68",
@@ -949,7 +992,8 @@
             "length": "FULL",
             "recommended": true,
             "start_sec": 7220,
-            "end_sec": 7475
+            "end_sec": 7475,
+            "collaboration": false
         },
         {
             "id": "7540f23a-3d80-4377-ad94-1cd30cb6c167",
@@ -959,7 +1003,8 @@
             "length": "FULL",
             "recommended": true,
             "start_sec": 7639,
-            "end_sec": 7779
+            "end_sec": 7779,
+            "collaboration": false
         },
         {
             "id": "2d392765-0c62-4560-8b62-696df7c7080a",
@@ -969,7 +1014,8 @@
             "length": "FULL",
             "recommended": false,
             "start_sec": 7856,
-            "end_sec": 8060
+            "end_sec": 8060,
+            "collaboration": false
         },
         {
             "id": "221bd810-ec76-46f9-8c5f-26a026e5eb35",
@@ -979,7 +1025,8 @@
             "length": "FULL",
             "recommended": false,
             "start_sec": 8228,
-            "end_sec": 8360
+            "end_sec": 8360,
+            "collaboration": false
         },
         {
             "id": "f0b89021-db48-4fb6-a60c-46ee7d0b4e64",
@@ -989,7 +1036,8 @@
             "length": "FULL",
             "recommended": true,
             "start_sec": 8503,
-            "end_sec": 8849
+            "end_sec": 8849,
+            "collaboration": false
         },
         {
             "id": "e51cb8c2-25f9-4dfe-8e9e-d787fcde2b1e",
@@ -999,7 +1047,8 @@
             "length": "FULL",
             "recommended": true,
             "start_sec": 9013,
-            "end_sec": 9392
+            "end_sec": 9392,
+            "collaboration": false
         },
         {
             "id": "bc4a1899-5317-4d78-a3a7-f443bc4af6cd",
@@ -1009,7 +1058,8 @@
             "length": "FULL",
             "recommended": false,
             "start_sec": 9600,
-            "end_sec": 9786
+            "end_sec": 9786,
+            "collaboration": false
         },
         {
             "id": "f1a1fe06-bd22-4926-88b7-83e1369831c6",
@@ -1019,7 +1069,8 @@
             "length": "FULL",
             "recommended": true,
             "start_sec": 10037,
-            "end_sec": 10292
+            "end_sec": 10292,
+            "collaboration": false
         },
         {
             "id": "ca21f066-991b-49db-a43c-89e48b4be474",
@@ -1029,7 +1080,8 @@
             "length": "FULL",
             "recommended": true,
             "start_sec": 1866,
-            "end_sec": 2132
+            "end_sec": 2132,
+            "collaboration": false
         },
         {
             "id": "94e3ffa3-9b11-4a01-a0d0-97828a497a35",
@@ -1039,7 +1091,8 @@
             "length": "FULL",
             "recommended": true,
             "start_sec": 267,
-            "end_sec": 512
+            "end_sec": 512,
+            "collaboration": false
         },
         {
             "id": "9ac954f7-ceac-48ab-9bff-9ff05a779de3",
@@ -1049,7 +1102,8 @@
             "length": "FULL",
             "recommended": true,
             "start_sec": 586,
-            "end_sec": 905
+            "end_sec": 905,
+            "collaboration": false
         },
         {
             "id": "dd5fe525-9d55-4ec2-950a-fe01d81c0352",
@@ -1059,7 +1113,8 @@
             "length": "FULL",
             "recommended": true,
             "start_sec": 964,
-            "end_sec": 1200
+            "end_sec": 1200,
+            "collaboration": false
         },
         {
             "id": "dfe239f7-ce53-4126-998a-0bc4e13d1e93",
@@ -1069,7 +1124,8 @@
             "length": "FULL",
             "recommended": true,
             "start_sec": 1324,
-            "end_sec": 1539
+            "end_sec": 1539,
+            "collaboration": false
         },
         {
             "id": "fe5453ae-0d1c-4784-b66a-819738c60421",
@@ -1079,7 +1135,8 @@
             "length": "FULL",
             "recommended": true,
             "start_sec": 1613,
-            "end_sec": 1779
+            "end_sec": 1779,
+            "collaboration": false
         },
         {
             "id": "a8e6ffc2-bda9-40bb-85cf-428ad37a6ace",
@@ -1089,7 +1146,8 @@
             "length": "FULL",
             "recommended": true,
             "start_sec": 5045,
-            "end_sec": 5302
+            "end_sec": 5302,
+            "collaboration": false
         },
         {
             "id": "5962406a-3241-4c26-8155-60f07684b1df",
@@ -1099,7 +1157,8 @@
             "length": "FULL",
             "recommended": true,
             "start_sec": 5428,
-            "end_sec": 5758
+            "end_sec": 5758,
+            "collaboration": false
         },
         {
             "id": "8e9bf5fc-46ab-46a8-ac54-d36ef5a898c1",
@@ -1109,7 +1168,8 @@
             "length": "FULL",
             "recommended": false,
             "start_sec": 5890,
-            "end_sec": 6159
+            "end_sec": 6159,
+            "collaboration": false
         },
         {
             "id": "b8b4d3e1-6779-4b12-9391-57d5a32a01d5",
@@ -1119,7 +1179,8 @@
             "length": "FULL",
             "recommended": true,
             "start_sec": 6310,
-            "end_sec": 6580
+            "end_sec": 6580,
+            "collaboration": false
         }
     ]
 }
